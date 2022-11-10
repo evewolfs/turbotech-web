@@ -27,7 +27,7 @@ const Hero = () => {
 export default Hero
 
 const HeroContainer = styled.div`
-background: #0C0C0C;
+background: var(--dark);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -62,7 +62,7 @@ height: 100%;
 overflow: hidden;`
 
 const VideoBg = styled.div`
-background: #1C1C1C;
+background: var(--dark);
 width:100%;
 height: 100%;
 -o-object-fit: cover;
@@ -87,7 +87,7 @@ text-align: center;
 height: 100vh;
 max-height:100%;
 padding: 0;
-color: #fff;
+color: var(--white);
 line-height: 1.1;
 font-weight: bold;
 

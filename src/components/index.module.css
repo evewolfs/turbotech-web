@@ -1,3 +1,11 @@
+:root {
+  --dark: #1C1C1C;
+  --orange: #FE9D2B;
+  --light: #ffffff;
+
+}
+
+
 .list {
   display: grid;
   margin: 0;

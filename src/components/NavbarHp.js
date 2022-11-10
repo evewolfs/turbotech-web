@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaPhoneAlt } from 'react-icons/fa';
 import Button from './Button';
+import Turbotech from './icons/Turbotech'
 
 function CollapsibleExample() {
   return (
@@ -71,25 +72,18 @@ function CollapsibleExample() {
 
 `}
   </style>
-    <Navbar collapseOnSelect expand="lg" bg="transparent">
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"var(--dark)", paddingBottom:"30px"}}>
       <Container>
+
+      <Navbar.Brand href="#home"><Turbotech style={{'height':'150px'}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="flex-grow-1 justify-content-evenly">
-            <Nav.Link href="#features" style={{color:"#FE9D2B"}}>Débouchage</Nav.Link>
-            <NavDropdown title={"Installation"} id="nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Chauffage</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              Plomberie
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#pricing"  style={{color:"#FE9D2B"}}>Entretien</Nav.Link>
-            <NavDropdown title={"Dépannage"} id="nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Chauffage</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              Plomberie
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav className="flex-grow-1 justify-content-evenly" >
+            <Nav.Link href="/debouchage" style={{color:"#FE9D2B"}}>Débouchage</Nav.Link>
+            <Nav.Link href="/installation" style={{color:"#FE9D2B"}}>Installation</Nav.Link>
+            <Nav.Link href="#/entretien"  style={{color:"#FE9D2B"}}>Entretien</Nav.Link>
+            <Nav.Link href="#/depannage"  style={{color:"#FE9D2B"}}>Dépannage</Nav.Link>
+  
             <Nav.Link href="/contact" style={{color:"#FE9D2B"}}>Contact</Nav.Link>
           </Nav>
     

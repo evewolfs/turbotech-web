@@ -55,11 +55,11 @@ export default Footer
 const StyledContainer = styled(Container)`
 color: white;
 column-gap: 2%;
+border-top: 1px solid var(--white);
 `
 
 
 const StyledRow = styled(Row)`
-background-color: #0C0C0C;
 margin-left: calc((100vw - 100%) / -2) !important;
 padding-left: calc((100vw - 100%) / 2);
 margin-right: calc((100vw - 100%) / -2) !important;

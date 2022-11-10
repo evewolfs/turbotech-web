@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const Button = styled(Link)`
-background: ${({primary}) => (primary ? 'transparent' : '#FE9D2B')};
+background: ${({primary}) => (primary ? 'transparent' : 'var(--orange)')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '16px 40px' : '10px 32px')};
-color: #fff;
+color: var(--white);
 font-size: ${({big}) => (big ? '20px' : '16px')};
 outline: none;
 border: 1px solid;
@@ -18,11 +18,11 @@ font-family: "Roboto Condensed";
 text-transform: uppercase;
 font-size: 1.2rem;
 font-weight: 400;
-color: ${({secondary}) => (secondary ? '#1C1C1C' : '#FE9D2B')};
+color: ${({secondary}) => (secondary ? 'var(--dark)' : 'var(--orange)')};
 
 &:hover {
-    background: ${({primary}) => (primary ? "#FE9D2B" : "##FFFFFF")};
+    background: ${({primary}) => (primary ? "var(--orange)" : "var(--white)")};
     transform: translateY(-2px);
-    color: white;
+    color: var(--white);
 }
 `

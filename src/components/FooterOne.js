@@ -33,15 +33,15 @@ const FooterContainer = styled.div`
   padding: 2rem;
   display: grid;
   grid-template-columns: 47,5% 47,5%;
-  color: #000;
-  background: #1c1c1c;
+  color: var(--white);
+
 `
 const FooterDesc = styled.div`
   padding: 0 2rem;
 
   h1 {
     margin-bottom: 3rem;
-    color: white;
+    color: var(--white);
   }
 `
 const FooterLinksWrapper = styled.div`
@@ -65,16 +65,16 @@ padding: 1rem 2rem;
 const FooterLink = styled.h2`
 font-size:14px;
 margin-bottom:16px;
-color: white;
+color: var(--white);
 `
 const FooterLinkTitle = styled(Link)`
 text-decoration:none;
 margin-bottom: 0.5rem;
 font-size: 14px;
-color: white;
+color: var(--white);
 
 &:hover{
-    color: orange;
+    color: var(--orange);
     transition: 0.3s ease-out;
 }
 `
