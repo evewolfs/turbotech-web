@@ -18,18 +18,18 @@ const HeroImage = props => {
 export default HeroImage
 
 const HeroTitle = styled.div`
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
   z-index: 100;
   text-align: center;
   display: inline;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-60%, -80%);
+  transform: translate(-50%, -50%);
   background-color: transparent;
 `
 
@@ -48,13 +48,15 @@ const HeroBg = styled.div`
   right: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 `
 
 const ImgBg = styled.div`
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: none; */
+  object-fit: scale-down;
+  filter: sepia(var(--value, 100%));
+ 
 `

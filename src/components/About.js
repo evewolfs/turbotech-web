@@ -121,11 +121,11 @@ const CardTitleSm = styled.div`
 const CardP = styled.div`
   color: var(--white);
   padding-top: 2%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
   padding-bottom: 4%;
   text-align: center;
-  line-height: 2.4rem;
+  line-height: 1.6rem;
   text-align: justify;
   text-justify: inter-word;
   padding: 2% 16%;

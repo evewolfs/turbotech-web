@@ -75,7 +75,7 @@ function CollapsibleExample() {
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"var(--dark)", paddingBottom:"30px"}}>
       <Container>
 
-      <Navbar.Brand href="#home"><Turbotech style={{'height':'150px'}}/></Navbar.Brand>
+      <Navbar.Brand href="/"><Turbotech style={{'height':'150px'}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="flex-grow-1 justify-content-evenly" >

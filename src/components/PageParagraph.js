@@ -1,27 +1,51 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 
-const PageParagraph = () => {
+const PageParagraph = (props) => {
   return (
-   <CardP>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aspernatur magnam animi ipsa autem fuga sapiente recusandae officiis incidunt voluptatem quae officia nesciunt fugit molestias dolorem architecto maiores libero dolor numquam suscipit, sequi itaque impedit distinctio? Ea impedit sed laborum veniam corrupti facere quos similique, est voluptatem culpa quisquam nihil ducimus sequi, dolorum ipsum neque nisi aperiam. Harum, facilis omnis!
-   </CardP>
+    <Container fluid>
+      <Col xs lg="8">
+      <CardTitle>{props.title}</CardTitle>
+          <CardP>{props.paragraph}</CardP>
+        </Col>
+        <Col xs lg="4">
+        </Col>
+
+    </Container>
   )
 }
 
 export default PageParagraph
 
-const CardP = styled.div`
-color: var(--white);
-padding-top: 2%;
-font-size:1.6rem;
-font-weight: 300;
-padding-bottom: 4%;
-text-align: center;
-line-height: 2.4rem;
-text-align: justify;
-text-justify: inter-word;
-padding: 2% 16%;
 
- 
+const ParagraphRow = styled(Row)`
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+`
+
+const CardTitle = styled.div`
+ color: var(--white);
+  padding-top: 4%;
+  margin-top: 8%;
+  margin-bottom: 4%;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  text-align: left;
+  padding: 0% 16%;
+  width: 40vw;
+`
+
+const CardP = styled.div`
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 4%;
+  line-height: 1.6rem;
+  text-align: left;
+  padding: 2% 16%;
 `
