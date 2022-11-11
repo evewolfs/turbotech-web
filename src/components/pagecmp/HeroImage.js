@@ -7,6 +7,7 @@ const HeroImage = props => {
       <HeroBg>
         <ImgBg>
           {" "}
+
           <img src={props.img} />
         </ImgBg>
         <HeroTitle>{props.title}</HeroTitle>
@@ -24,12 +25,12 @@ const HeroTitle = styled.div`
   text-transform: uppercase;
   /* text-shadow: 2px 2px 4px #000000; */
   z-index: 100;
-  text-align: center;
+  text-align: left;
   display: inline;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   background-color: transparent;
 `
 
@@ -57,6 +58,7 @@ const ImgBg = styled.div`
   height: 100%;
   /* -o-object-fit: none; */
   object-fit: scale-down;
-  filter: sepia(var(--value, 100%));
+  /* filter: sepia(var(--value, 100%)); */
+  /* filter: sepia(100%) hue-rotate(-360deg); */
  
 `

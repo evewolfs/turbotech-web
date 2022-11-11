@@ -2,13 +2,18 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import HeroImage from "../components/HeroImage"
+import HeroImage from "../components/pagecmp/HeroImage"
 import depannage from "../assets/images/tt-depannage.jpg"
-import PageParagraph from "../components/PageParagraph"
+import PageParagraph from "../components/pagecmp/PageParagraph"
+import { FaPhoneAlt } from 'react-icons/fa';
+import HeadingList from "../components/pagecmp/HeadingList"
 
 const debouchageP = {
-  title: "Ne laissez pas les choses s’accumuler!",
-  paragraph: "Besoin d’un débouchage au plus vite? Un évier de cuisine refoule, une douche qui ne s’évacue plus, un sterput ou WC déborde? Et oui, toutes les canalisations peuvent se boucher, et en venir à bout être notre spécialité. Ayant plus de 15 ans d’expérience dans le domaine, on peut vous assurer que nous avons tout vu et tout résolu. Avec le temps, les déchets organiques voire même un corps étrangers tel qu’un jouet d’enfant ou des lingettes vont s’accumuler dans vos canalisations et vont empêcher de faire passer l’eau. Dans d’autres cas, il se peut aussi qu’un dispositif d'évacuation soit mal pensé et doive être refait. En tous les cas, nous sommes équipés de toutes les technologies nécessaires pour vous libérer de ce désagrément. Nous sommes doté d’une caméra thermique pour localiser le bouchon, mais aussi de différent furet, ventouse, pompe, tourniquet et bien-sûr la bête redoutable à qui rien de résiste: le déboucheur haute pression. Notre expertise complète en tant que plombier chauffagiste est prête à agir même dans les situations les plus complexes. N’hésitez pas à nous appeler pour obtenir un devis estimatif et un rendez-vous au plus vite. Nous sommes transparent sur nos tarifs et vous assurons un service sans facture surprise à la fin."
+  pageheading: ["Un évier est bouché?","Une douche qui ne s’évacue plus?","Un sterput qui déborde?"],
+  title: "On peut vous aider?",
+  paragraph: "Et oui, toutes les canalisations peuvent se boucher. En venir à bout être notre spécialité depuis plus de 15 ans. Que ce soit un bouchon tenace ou une installation mal pensée, nous avons tous les outils et l’expertise pour vous sortir de cette affaire ennuyeuse.",
+  servicelist: ['Débouchage sanitaires', 'Débouchage sterput','Débouchage égouts', 'Débouchage haute pression', 'Débouchage au furet', 'Débouchage + Curage canalisation/colonne Eau Fécale', 'Débouchage + Curage canalisation/colonne Eau Usée', 'Débouchage + Curage canalisation/colonne Eau Pluviale', "Débouchage + Curage du réseau d'égouttage", 'Débouchage WC', 'Débouchage baignoire et douche', 'Débouchage évier et lavabo', 'Dégorgement de canalisations', 'Problèmes de siphon', 'Problèmes évacuation d’eaux', 'Entretien des canalisations, égouts et sanitaires'],
+
 }
 
 
@@ -16,7 +21,7 @@ const debouchageP = {
 const Debouchage = () => (
   <Layout>
     <HeroImage title="débouchage" img={depannage} />
-    <PageParagraph title={debouchageP.title} paragraph={debouchageP.paragraph}/>
+    <PageParagraph title={debouchageP.title} paragraph={debouchageP.paragraph} pageheading={debouchageP.pageheading} servicelist={debouchageP.servicelist}/>
   </Layout>
 )
 
