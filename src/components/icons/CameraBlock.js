@@ -25,7 +25,7 @@ const IconRow = styled(Row)`
   margin: 0 auto;
   justify-content: center;
   color: var(--white);
-  padding: 2%;
+  padding: 2% 0;
   align-items: center;
 `
 

@@ -72,7 +72,7 @@ function CollapsibleExample() {
 
 `}
   </style>
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"var(--dark)", paddingBottom:"30px"}}>
+    <Navbar fixed="top"  collapseOnSelect expand="lg" style={{backgroundColor:"var(--dark)", paddingBottom:"30px"}}>
       <Container>
 
       <Navbar.Brand href="/"><Turbotech style={{'height':'150px'}}/></Navbar.Brand>

@@ -12,9 +12,8 @@ const Layout = ({ children }) => {
     <>
     <GlobalStyle />
       <NavbarHp />
-      
-        <main>{children}</main>
     
+        <main>{children}</main>
        <Footer />
     </>
   )
