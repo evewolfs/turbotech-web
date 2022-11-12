@@ -16,4 +16,8 @@ export const GlobalStyle = createGlobalStyle `
     --white: #eeeeee;
   
   }
+
+  ul {
+    padding-left: 0 !important;
+  }
 `
