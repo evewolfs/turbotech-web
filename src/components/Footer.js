@@ -26,9 +26,9 @@ const Footer = () => {
       <Col xs lg="4">
         <LinkBanner>
         <IconBox> <a href="example.com"  >
-     <RiFacebookCircleLine size={30}/></a></IconBox>
-        <IconBox> <a href="example.com"  ><FiMail size={30} /></a></IconBox>
-        <IconBox> <a href="examle.com"  ><TVAButton>N* TVA</TVAButton></a></IconBox>
+     <RiFacebookCircleLine size={34} style={{textDecoration: 'none'}} /></a></IconBox>
+        <IconBox> <a href="example.com" style={{textDecoration: 'none'}} ><FiMail size={30} /></a></IconBox>
+        <IconBox> <a href="examle.com" style={{textDecoration: 'none'}}  ><TVAButton>TVA</TVAButton></a></IconBox>
              
     
     
@@ -93,8 +93,8 @@ const FooterButton = styled.div`
   border-radius: 50px;
 :hover{
 
-  color: var(--white);
-  border: 1px solid var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 `
@@ -104,10 +104,26 @@ display: flex;
 justify-content: center;
 align-items:center;
  text-decoration: none;
+ color: var(--white) !important;
+
+
+
+
 `
 const TVAButton = styled.div`
 color: var(--white);
-font-size:0.8rem;
+font-size:0.6rem;
+font-weight: 600;
+border: 2px solid var(--white);
+border-radius: 19px;
+padding: 6px;
+:hover{
+
+color: var(--orange);
+border: 2px solid var(--orange);
+}
+
+
 
 `
 

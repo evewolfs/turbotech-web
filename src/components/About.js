@@ -97,7 +97,7 @@ const AboutTitle = styled.div`
   color: var(--white);
   font-size: 3rem;
   line-height: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   margin-top: 100px;
   text-align: center;
@@ -109,7 +109,7 @@ const CardTitleSm = styled.div`
   color: var(--white);
   font-size: 1.2rem;
   line-height: normal;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0px;
   width: 200px;
@@ -122,10 +122,10 @@ const CardP = styled.div`
   color: var(--white);
   padding-top: 2%;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 600;
   padding-bottom: 4%;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   text-align: justify;
   text-justify: inter-word;
   padding: 2% 16%;

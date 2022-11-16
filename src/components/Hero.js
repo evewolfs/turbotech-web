@@ -97,7 +97,7 @@ const HeroH1 = styled.h1`
 font-size: clamp(1.6rem, 6vw, 4rem);
 margin: 1.5rem;
 letter-spacing: 1px;
-font-weight: 300;
+font-weight: 400;
 padding: 0 1rem;
 font-family: "Roboto Condensed";
 text-transform: uppercase;
