@@ -30,10 +30,10 @@ background: var(--dark);
 display: flex;
 justify-content: center;
 align-items: center;
-height: 100vh;
+height: 70vh;
 padding: 1rem 1rem;
 position: relative;
-margin-top: -40px;
+margin-top: 100px;
 padding-bottom: 20px;
 color: #fff;
 font-family: "Roboto Condensed";
@@ -105,7 +105,7 @@ text-transform: uppercase;
 
 const DownArrow = styled.div`
   position: absolute;
-  top: calc(100vh - 60px);
+  top: calc(70vh - 60px);
   left: calc(50% - 14px);
   width: 0;
   height: 30px;
