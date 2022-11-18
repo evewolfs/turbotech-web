@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 export const Camion = ({ className }) => (
   <motion.svg viewBox="0 0 323.5 98.5" className={className}>
 
-<g fill="none" strokeMiterlimit="10">
+<g fill="none" strokeMiterlimit="10" style={{width:'80px'}}>
         <circle
           cx="84.8"
           cy="51.5"

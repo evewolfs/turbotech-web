@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import {Container, Row, Col} from "react-bootstrap"
 import { Expert } from "./icons/Expert"
 import { Clock } from "./icons/Clock"
 import { Location } from "./icons/Location"
@@ -19,13 +17,12 @@ const About = () => {
           </CamionAnim>
           <CardP>
             <p>
-              Actif depuis 2005, nous nous déplaçons partout dans Bruxelles et
-              ses environs. Nous opérons avec précision, et vous garantissons un
-              travail impeccable. Nous utilisons aussi des produits de qualité,
-              et tout cela sans vous ruiner. Le patron réalise lui-même les
-              travaux, avec l’aide d’ouvriers qualifiés si nécessaire. N’hésitez
-              pas à nous appeler ou nous demander un devis, nous nous ferons un
-              plaisir de vous aider!
+              Actif depuis 2005, nous nous déplaçons partout dans Bruxelles pour vous venir en aide.
+              Nous vous garantissons un
+              travail impeccable, des matériaux de qualité, et tout cela à un prix abordable.
+              Le patron réalise lui-même les travaux, avec l’aide d’ouvriers qualifiés si nécessaire.
+               N’hésitez pas à nous appeler ou nous demander un devis, nous nous ferons un
+              plaisir de vous répondre !
             </p>
           </CardP>
         </Col>
@@ -85,6 +82,11 @@ const AboutCard = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 8%;
+
+  @media (max-width: 768px) {
+    margin: 2%;
+    padding: 4%;
+  }
 `
 
 const AboutCardSm = styled.div`
@@ -95,7 +97,7 @@ const AboutCardSm = styled.div`
 
 const AboutTitle = styled.div`
   color: var(--white);
-  font-size: 3rem;
+  font-size: clamp(2.4rem, 6vw, 3rem);
   line-height: normal;
   font-weight: 600;
   font-style: normal;
@@ -111,7 +113,6 @@ const CardTitleSm = styled.div`
   line-height: normal;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0px;
   width: 200px;
   text-align: center;
   color: var(--orange);
@@ -121,14 +122,19 @@ const CardTitleSm = styled.div`
 const CardP = styled.div`
   color: var(--white);
   padding-top: 2%;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 4%;
-  text-align: center;
-  line-height: 1.8rem;
-  text-align: justify;
-  text-justify: inter-word;
-  padding: 2% 16%;
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  line-height: clamp(1.8rem, 3vw, 2.2rem);
+  text-align: left;
+  text-justify: inter-character;
+  width: 600vw;
+  width: clamp(30rem, 60vw, 70rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
 `
 const CamionAnim = styled.div`
   width: 1000px;
@@ -141,5 +147,17 @@ const CamionAnim = styled.div`
     100% {
       margin-left: 1000px;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 400px;
+    @keyframes moveclouds {
+    0% {
+      margin-left: -300px;
+    }
+    100% {
+      margin-left: 300px;
+    }
+  }
   }
 `

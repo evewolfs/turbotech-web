@@ -1,10 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaPhoneAlt } from 'react-icons/fa';
-import Button from './Button';
 import Turbotech from './icons/Turbotech'
 
 function CollapsibleExample() {
@@ -17,45 +16,25 @@ function CollapsibleExample() {
     padding-top:2%;
     text-transform:uppercase;
     font-size: 1rem;
+    font-weight:500;
 }
 
-#nav-dropdown{
-    color:#FE9D2B;
-}
 
 
   
 
   @media only screen and (max-width: 768px) {
     div.container {
-        background-color: #0C0C0C;
+        background-color: var(--dark);
         padding: 20px;}
     }
-    .dropdown-menu.show{
-        background-color: #0C0C0C;
-        border: none;
-        
-      }
-      .dropdown-item{
-        color: #FE9D2B;
-    }
-  }
 
-  .dropdown-menu.show{
-    background-color: #0C0C0C;
-    border: none;
-    
   }
 
 
-
-.dropdown-item{
-    color: #FE9D2B;
-}
-
-#btn-contact {
-    border: 1px solid #FE9D2B;
-    color:#FE9D2B;
+#btn-contact a {
+    border: 2px solid var(--orange);
+    color:var(--orange);
     text-transform:uppercase;
     border-radius: 50px;
     text-align: center;
@@ -63,7 +42,7 @@ function CollapsibleExample() {
     text-decoration: none;
 }
 .navbar-toggler{
-    border-color:#FE9D2B;
+    border-color:var(--orange);
 }
 
 .navbar-toggler-icon{
@@ -79,18 +58,18 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="flex-grow-1 justify-content-evenly" >
-            <Nav.Link href="/debouchage" style={{color:"#FE9D2B"}}>Débouchage</Nav.Link>
-            <Nav.Link href="/installation" style={{color:"#FE9D2B"}}>Installation</Nav.Link>
-            <Nav.Link href="#/entretien"  style={{color:"#FE9D2B"}}>Entretien</Nav.Link>
-            <Nav.Link href="#/depannage"  style={{color:"#FE9D2B"}}>Dépannage</Nav.Link>
+            <Nav.Link href="/debouchage" style={{color:"var(--orange)"}}>Débouchage</Nav.Link>
+            <Nav.Link href="/installation" style={{color:"var(--orange)"}}>Installation</Nav.Link>
+            <Nav.Link href="/entretien"  style={{color:"var(--orange)"}}>Entretien</Nav.Link>
+            <Nav.Link href="/depannage"  style={{color:"var(--orange)"}}>Dépannage</Nav.Link>
   
-            <Nav.Link href="/contact" style={{color:"#FE9D2B"}}>Contact</Nav.Link>
-          </Nav>
-    
-        </Navbar.Collapse>
+            <Nav.Link href="/contact" style={{color:"var(--orange)"}}>Contact</Nav.Link>
+          
         <Navbar.Text>
-            <a href="#" id="btn-contact"><FaPhoneAlt /> 0472 01 47 58</a>
-          </Navbar.Text>
+            <PhoneButton style={{color:"var(--orange)", textAlign:"center", border:'2px solid var(--orange)', borderRadius:"25px", padding:"14px", textDecoration:'none'}}><FaPhoneAlt /> 0472 01 47 58</PhoneButton>
+          </Navbar.Text></Nav>
+        </Navbar.Collapse>
+    
       </Container>
     </Navbar>
     </>
@@ -99,3 +78,14 @@ function CollapsibleExample() {
 }
 
 export default CollapsibleExample;
+
+const PhoneButton = styled.a`
+    border: 2px solid var(--orange);
+    color:var(--orange);
+    text-transform:uppercase;
+    border-radius: 50px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+`

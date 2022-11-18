@@ -14,7 +14,7 @@ import { BsCameraReels } from "react-icons/bs"
 import {AiOutlineEuro} from 'react-icons/ai'
 import {RiWindyFill} from 'react-icons/ri'
 
-const entretienData = {
+const installationData = {
   pageheading: [
     "Un évier bouché?",
     "Une douche qui ne s’évacue plus?",
@@ -39,16 +39,16 @@ const entretienData = {
     "Dégorgement de canalisations",
     "Problèmes de siphon",
     "Problèmes évacuation d’eaux",
-    "Entretien des canalisations et égouts",
+    "installation des canalisations et égouts",
   ],
   pagetitle: "débouchage",
 }
 
-const Entretien = props => (
+const Installation = props => (
   <Layout>
-    <HeroImage title="entretien" img={depannage} />
-    <PageHeader pageheading={entretienData.pageheading} />
-    <PageP paragraph={entretienData.paragraph} />
+    <HeroImage title="installation" img={depannage} />
+    <PageHeader pageheading={installationData.pageheading} />
+    <PageP paragraph={installationData.paragraph} />
     <IconsRow>
     <Col xs lg="3">
     <CardIcon
@@ -71,16 +71,16 @@ const Entretien = props => (
     </IconsRow>
 
     <ServicesList
-      servicelist={entretienData.servicelist}
-      pagetitle={entretienData.pagetitle}
+      servicelist={installationData.servicelist}
+      pagetitle={installationData.pagetitle}
     />
 
   </Layout>
 )
 
-export const Head = () => <Seo title="Page entretien" />
+export const Head = () => <Seo title="Page installation" />
 
-export default Entretien
+export default Installation
 
 const IconBox = styled.div`
   padding: clamp(10rem,30vw, 30rem);

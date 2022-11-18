@@ -7,7 +7,7 @@ const PowerBlock = (props) => {
   return (
     <IconRow>
 <Col xs lg={1}>
-  <RiWindyFill size={70} color={'#FF9600'}/> 
+  <RiWindyFill size={50} color={'#FF9600'}/> 
 </Col>
 <Col xs lg={4}>
     <IconTitle>Débouchage haute pression</IconTitle>
@@ -31,6 +31,7 @@ const IconRow = styled(Row)`
 
 const IconTitle = styled.div`
 text-transform: uppercase;
-color: var(--white);
+color: var(--orange);
 font-size: 1rem;
+font-weight: 600;
 `

@@ -9,10 +9,9 @@ const PageHeader = (props) => {
   return (
  
       <ParagraphRow>
-        <Col xs lg="5">
+    <Col xs lg="10">
           <CardHeading>{map2}</CardHeading>
         </Col>
-        <Col xs lg="3"></Col>
       </ParagraphRow>
 
   )
@@ -22,8 +21,10 @@ export default PageHeader
 
 const ParagraphRow = styled(Row)`
   display: flex;
-  margin: 0 auto;
   justify-content: center;
+  width: clamp(30rem, 80vw, 60rem);
+  margin: 0 clamp(2rem, 2vw, 4rem);
+  padding: 0 clamp(1rem, 1vw, 2rem);
 `
 
 

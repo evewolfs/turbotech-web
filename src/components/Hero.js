@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
 import Video from '../assets/videos/turbotech-video2.mp4'
 import Logo from '../assets/images/turbotech-logo2209.svg'
 
@@ -34,8 +33,8 @@ align-items: center;
 height: 100vh;
 padding: 1rem 1rem;
 position: relative;
-margin-top: -80px;
-padding-bottom: 40px;
+margin-top: -40px;
+padding-bottom: 20px;
 color: #fff;
 font-family: "Roboto Condensed";
 
@@ -95,10 +94,10 @@ font-weight: bold;
 
 const HeroH1 = styled.h1`
 font-size: clamp(1.6rem, 6vw, 4rem);
-margin: 1.5rem;
+margin: 1rem;
 letter-spacing: 1px;
 font-weight: 400;
-padding: 0 1rem;
+padding-top: 1rem;
 font-family: "Roboto Condensed";
 text-transform: uppercase;
 

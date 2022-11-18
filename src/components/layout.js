@@ -1,7 +1,5 @@
-
 import * as React from "react"
 import NavbarHp from "./NavbarHp"
-import FooterOne from "./FooterOne"
 import Footer from './Footer'
 import { GlobalStyle } from "./styles/GlobalStyles"
 

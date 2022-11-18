@@ -19,7 +19,7 @@ const HeroImage = props => {
 export default HeroImage
 
 const HeroTitle = styled.div`
-  font-size: 5rem;
+  font-size: clamp(2rem, 12vw, 4rem);
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
@@ -28,9 +28,9 @@ const HeroTitle = styled.div`
   text-align: left;
   display: inline;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
   background-color: transparent;
 `
 
@@ -38,7 +38,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 auto;
 
   color: var(--white);
 `
