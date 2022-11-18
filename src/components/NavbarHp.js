@@ -57,20 +57,20 @@ function CollapsibleExample() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="flex-grow-1 justify-content-evenly">
-              <Nav.Link href="/debouchage" style={{ color: "var(--orange)" }}>
+              <Nav.Link href="/turbotech-web/debouchage" style={{ color: "var(--orange)" }}>
                 Débouchage
               </Nav.Link>
-              <Nav.Link href="/installation" style={{ color: "var(--orange)" }}>
+              <Nav.Link href="/turbotech-web/installation" style={{ color: "var(--orange)" }}>
                 Installation
               </Nav.Link>
-              <Nav.Link href="/entretien" style={{ color: "var(--orange)" }}>
+              <Nav.Link href="/turbotech-web/entretien" style={{ color: "var(--orange)" }}>
                 Entretien
               </Nav.Link>
-              <Nav.Link href="/depannage" style={{ color: "var(--orange)" }}>
+              <Nav.Link href="/turbotech-web/depannage" style={{ color: "var(--orange)" }}>
                 Dépannage
               </Nav.Link>
 
-              <Nav.Link href="/contact" style={{ color: "var(--orange)" }}>
+              <Nav.Link href="/turbotech-web/contact" style={{ color: "var(--orange)" }}>
                 Contact
               </Nav.Link>
             </Nav>

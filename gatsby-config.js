@@ -1,11 +1,11 @@
 module.exports = {
+  pathPrefix: "/turbotech-web",
   siteMetadata: {
     title: `Turbotech chauffage et débouchage`,
     description: `Entreprise spécialisée en débouchage de canalisations et dépannage de chauffage et chaudière`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
-  pathPrefix: "/turbotech-web",
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
