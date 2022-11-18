@@ -5,6 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: "/turbotech-web",
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
