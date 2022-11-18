@@ -16,7 +16,7 @@ const Footer = () => {
             Besoin d’un devis <br />
             ou d’un rendez-vous?
           </FooterText>
-          <FooterButton>Appelez maintenant</FooterButton>
+          <FooterButton>Appelez-nous</FooterButton>
         </StyledCol>
       </StyledRow>
       <DarkRow>
@@ -65,8 +65,8 @@ const StyledRow = styled(Row)`
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: var(--orange);
 `
 
@@ -93,11 +93,12 @@ const FooterText = styled.div`
 `
 
 const FooterButton = styled.div`
-  padding: 1%;
   margin: 4% 2%;
+  padding: 0.5rem 0.75rem;
   text-align: center;
   font-weight: 600;
   font-size: 1.2rem;
+  min-width: 100px;
   background-color: var(--orange);
   color: var(--dark);
   text-transform: uppercase;
@@ -106,6 +107,7 @@ const FooterButton = styled.div`
   :hover {
     color: var(--white);
     border: 1px solid var(--white);
+    transform: translateY(-2px);
   }
 `
 

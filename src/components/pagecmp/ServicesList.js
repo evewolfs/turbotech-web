@@ -10,7 +10,7 @@ function ServicesList(props) {
     
       <Col xs lg="10">
         <ListContainer>
-          <ListTitle>Quel genre de {props.pagetitle}?</ListTitle>
+          <ListTitle>Quel genre {props.pagetitle} ?</ListTitle>
           <br /> {map1}
         </ListContainer>
       </Col>
@@ -35,7 +35,7 @@ const ListContainer = styled.div`
 
 const ListTitle = styled.div`
   color: var(--white);
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 6vw, 2rem);
   font-weight: 300;
   line-height: 2.2rem;
   text-align: left;

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 import styled from "styled-components"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,33 +14,40 @@ const Services = () => {
     <ServicesContainer>
     <Row className="justify-content-md-center" >
      <Col xs lg="4">
+     <Link href="/installation">
       <ServiceItem>
         <Installation />
         <ServiceTitle>Installation</ServiceTitle>
       </ServiceItem>
+      </Link>
      </Col> 
 
       <Col xs lg="4">
+      <Link href="/debouchage">
  <ServiceItem >
         <Debouchage />
         <ServiceTitle> Débouchage</ServiceTitle>
       </ServiceItem>
+      </Link>
       </Col>
  </Row> 
  <Row className="justify-content-md-center" >
 
      <Col xs lg="4">
+     <Link href="/depannage">
       <ServiceItem>
         <Depannage />
         <ServiceTitle>Dépannage</ServiceTitle>     
-      </ServiceItem>  </Col>
+      </ServiceItem> </Link> </Col>
 
       <Col xs lg="4">
+      <Link href="/entretien">
       <ServiceItem>
         <Entretien />
         <ServiceTitle>Entretien </ServiceTitle>
 
       </ServiceItem>
+      </Link>
       </Col>
       </Row>
     </ServicesContainer>

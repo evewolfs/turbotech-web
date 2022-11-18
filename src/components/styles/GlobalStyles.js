@@ -28,5 +28,9 @@ export const GlobalStyle = createGlobalStyle `
       color: var(--orange);
   
       }
+
+   main {
+    padding:10%;
+   }
   }
 `

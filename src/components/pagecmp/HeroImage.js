@@ -39,7 +39,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 auto;
-
+margin-bottom: 4%;
   color: var(--white);
 `
 
@@ -58,7 +58,8 @@ const ImgBg = styled.div`
   height: 100%;
   /* -o-object-fit: none; */
   object-fit: scale-down;
-  /* filter: sepia(var(--value, 100%)); */
+  background-position: -500px -500px;
+  filter: sepia(var(--value, 100%));
   /* filter: sepia(100%) hue-rotate(-360deg); */
  
 `

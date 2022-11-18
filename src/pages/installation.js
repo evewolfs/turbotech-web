@@ -5,66 +5,56 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import {Col, Row} from 'react-bootstrap'
 import HeroImage from "../components/pagecmp/HeroImage"
-import depannage from "../assets/images/tt-depannage.jpg"
+import installation from "../assets/images/tt-installation.png"
 import PageHeader from "../components/pagecmp/PageHeader"
 import PageP from "../components/pagecmp/PageP"
 import ServicesList from "../components/pagecmp/ServicesList"
 import CardIcon from "../components/Card"
-import { BsCameraReels } from "react-icons/bs"
-import {AiOutlineEuro} from 'react-icons/ai'
-import {RiWindyFill} from 'react-icons/ri'
+import { TbFlame, TbArrowsRandom} from "react-icons/tb"
+import { BiWater } from 'react-icons/bi'
+import BrandsBanner from "../components/pagecmp/BrandsBanner"
+
 
 const installationData = {
-  pageheading: [
-    "Un évier bouché?",
-    "Une douche qui ne s’évacue plus?",
-    "Un sterput qui déborde?",
-    "On peut vous aider?",
-  ],
-  headline: "On peut vous aider?",
-  paragraph:
-    "Et oui, toutes les canalisations peuvent se boucher. En venir à bout être notre spécialité depuis plus de 15 ans. Que ce soit un bouchon tenace ou une installation mal pensée, nous avons tous les outils et l’expertise pour vous sortir de cette affaire ennuyeuse.",
+  paragraph:"Nous installons des chaudières au gaz, des réseaux de canalisations ainsi que tous types de sanitaires, et ce, en respectant toujours vos goûts et votre budget. Appelez-nous pour fixer un rendez-vous. Une fois sur place, nous pourrons vous renseigner sur les meilleures pratiques et la solution la plus adaptée à votre projet.",
   servicelist: [
-    "sanitaires",
-    "sterput",
-    "égouts",
-    "baignoire et douche",
+    "chaudière au gaz",
+    "radiateurs",
+    "thermostat",
+    "baignoire et douche (italienne)",
     "évier et lavabo",
-    "haute pression",
-    "au furet",
-    "canalisation/colonne Eau Fécale",
-    "canalisation/colonne Eau Usée",
-    "canalisation/colonne Eau Pluviale",
+    "robineterie",
+    "canalisation eau propre",
+    "canalisation eau usée",
+    "canalisation eau pluviale",
     "réseau d'égouttage",
-    "Dégorgement de canalisations",
-    "Problèmes de siphon",
-    "Problèmes évacuation d’eaux",
-    "installation des canalisations et égouts",
   ],
-  pagetitle: "débouchage",
+  pagetitle: "d'installation",
 }
 
 const Installation = props => (
   <Layout>
-    <HeroImage title="installation" img={depannage} />
-    <PageHeader pageheading={installationData.pageheading} />
-    <PageP paragraph={installationData.paragraph} />
+    <HeroImage title="installation" img={installation} />
+    <PageHeader pText="Une salle de bain à refaire?" color="white" />
+    <PageHeader pText="Une chaudière en fin de vie?" color="white" />
+    <PageHeader pText="On s'en occupe !" color="orange" />    <PageP paragraph={installationData.paragraph} />
     <IconsRow>
     <Col xs lg="3">
     <CardIcon
-      avatar={<BsCameraReels size={50} color={"var(--orange)"} />}
-      title="Inspection caméra thermique"
+      avatar={<BiWater size={70} color={"var(--orange)"} />}
+      title="Sanitaires de tous type"
       color={"var(--orange)"}
     /></Col>
     <Col xs lg="3">
     <CardIcon
-      avatar={<RiWindyFill size={50} color={"var(--orange)"} />}
-      title="Débouchage haute pression"
+      avatar={<TbFlame size={70} color={"var(--orange)"} />}
+      title="Chaudière et chauffage"
       color={"var(--orange)"}
+    
     /> </Col>  <Col xs lg="3">
     <CardIcon
-      avatar={<AiOutlineEuro size={50} color={"var(--orange)"} />}
-      title="Prix abordables"
+      avatar={<TbArrowsRandom size={70} color={"var(--orange)"} />}
+      title="Système d'égouttage"
       color={"var(--orange)"}
     />
     </Col><Col xs lg="2"></Col>
@@ -74,6 +64,7 @@ const Installation = props => (
       servicelist={installationData.servicelist}
       pagetitle={installationData.pagetitle}
     />
+    <BrandsBanner />
 
   </Layout>
 )

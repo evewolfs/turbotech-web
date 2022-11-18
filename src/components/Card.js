@@ -13,15 +13,13 @@ function CardIcon({ avatar, title, children, ...rootProps }) {
       >
         {avatar ? (
           <Box
-          
-            borderRadius="50%"
             overflow="hidden"
           >
             {avatar}
           </Box>
         ) : null}
         {title ? (
-          <Box fontSize="1.2rem" padding="10px 0">
+          <Box fontSize="clamp(1rem, 2vw, 1.2rem)" padding="10px 0">
             {title}
           </Box>
         ) : null}
@@ -29,5 +27,6 @@ function CardIcon({ avatar, title, children, ...rootProps }) {
       </Box>
     )
   }
+
   
 export default CardIcon

@@ -15,39 +15,33 @@ import {AiOutlineEuro} from 'react-icons/ai'
 import {RiWindyFill} from 'react-icons/ri'
 
 const debouchageData = {
-  pageheading: [
-    "Un évier bouché?",
-    "Une douche qui ne s’évacue plus?",
-    "Un sterput qui déborde?",
-    "On peut vous aider?",
-  ],
-  headline: "On peut vous aider?",
+
   paragraph:
     "Et oui, toutes les canalisations peuvent se boucher. En venir à bout être notre spécialité depuis plus de 15 ans. Que ce soit un bouchon tenace ou une installation mal pensée, nous avons tous les outils et l’expertise pour vous sortir de cette affaire ennuyeuse.",
   servicelist: [
     "sanitaires",
     "sterput",
-    "égouts",
+    "égouts et réseau d'égouttage",
     "baignoire et douche",
     "évier et lavabo",
-    "haute pression",
-    "au furet",
-    "canalisation/colonne Eau Fécale",
-    "canalisation/colonne Eau Usée",
-    "canalisation/colonne Eau Pluviale",
-    "réseau d'égouttage",
+    "colonne Eau Fécale",
+    "colonne Eau Usée",
+    "colonne Eau Pluviale",
     "Dégorgement de canalisations",
     "Problèmes de siphon",
     "Problèmes évacuation d’eaux",
     "Entretien des canalisations et égouts",
   ],
-  pagetitle: "débouchage",
+  pagetitle: "de débouchage",
 }
 
 const Debouchage = props => (
   <Layout>
     <HeroImage title="débouchage" img={depannage} />
-    <PageHeader pageheading={debouchageData.pageheading} />
+    <PageHeader pText="Un évier bouché?" color="white" />
+    <PageHeader pText="Une douche qui ne s’évacue plus?" color="white" />
+    <PageHeader pText="Un sterput qui déborde?" color="white" />
+    <PageHeader pText="On peut vous aider?" color="orange" />
     <PageP paragraph={debouchageData.paragraph} />
     <IconsRow>
     <Col xs lg="3">

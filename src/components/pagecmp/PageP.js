@@ -27,7 +27,7 @@ const CardP = styled.div`
   color: var(--white);
   font-size: clamp(1.4rem, 3vw, 1.6rem);
   font-weight: 600;
-  line-height: clamp(1.8rem, 3vw, 2.2rem);
+  line-height: clamp(1.6rem, 3vw, 2rem);
   text-align: left;
   text-align: left;
   margin-top: 4%;

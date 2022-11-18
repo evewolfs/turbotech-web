@@ -2,7 +2,7 @@ import React from "react"
 
 function Box({
   children,
-  fontSize = '1.2rem',
+  fontSize,
   fontWeight = '600', 
   color,
   maxWidth="200px",
@@ -23,7 +23,7 @@ function Box({
   return (
     <div
       {...props}
-      style={{ color, fontWeight, minHeight, margin, padding, width, display, maxWidth, textTransform, alignItems, overflow, flexDirection, textAlign, ...style }}
+      style={{ color,fontSize, fontWeight, minHeight, margin, padding, width, display, maxWidth, textTransform, alignItems, overflow, flexDirection, textAlign, ...style }}
     >
       {children}
     </div>

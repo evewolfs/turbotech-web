@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { FaPhoneAlt } from 'react-icons/fa';
-import Turbotech from './icons/Turbotech'
+import React from "react"
+import styled from "styled-components"
+import Container from "react-bootstrap/Container"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
+import { FaPhoneAlt } from "react-icons/fa"
+import Turbotech from "./icons/Turbotech"
 
 function CollapsibleExample() {
   return (
     <>
-    <style type="text/css">
-    {`
+      <style type="text/css">
+        {`
 .navbar {
     z-index:1000;
     padding-top:2%;
@@ -18,10 +18,6 @@ function CollapsibleExample() {
     font-size: 1rem;
     font-weight:500;
 }
-
-
-
-  
 
   @media only screen and (max-width: 768px) {
     div.container {
@@ -31,16 +27,13 @@ function CollapsibleExample() {
 
   }
 
-
-#btn-contact a {
-    border: 2px solid var(--orange);
-    color:var(--orange);
-    text-transform:uppercase;
-    border-radius: 50px;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
+  #btn-style a:hover{
+    
+      transform: translateY(-2px);
+      color: var(--white);
+      border: 2px solid var(--white);
+    
+  }
 .navbar-toggler{
     border-color:var(--orange);
 }
@@ -50,42 +43,74 @@ function CollapsibleExample() {
 }
 
 `}
-  </style>
-    <Navbar fixed="top"  collapseOnSelect expand="lg" style={{backgroundColor:"var(--dark)", paddingBottom:"30px"}}>
-      <Container>
+      </style>
+      <Navbar
+        fixed="top"
+        collapseOnSelect
+        expand="lg"
+        style={{ backgroundColor: "var(--dark)", paddingBottom: "30px" }}
+      >
+        <Container>
+          <Navbar.Brand href="/">
+            <Turbotech style={{ height: "150px" }} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="flex-grow-1 justify-content-evenly">
+              <Nav.Link href="/debouchage" style={{ color: "var(--orange)" }}>
+                Débouchage
+              </Nav.Link>
+              <Nav.Link href="/installation" style={{ color: "var(--orange)" }}>
+                Installation
+              </Nav.Link>
+              <Nav.Link href="/entretien" style={{ color: "var(--orange)" }}>
+                Entretien
+              </Nav.Link>
+              <Nav.Link href="/depannage" style={{ color: "var(--orange)" }}>
+                Dépannage
+              </Nav.Link>
 
-      <Navbar.Brand href="/"><Turbotech style={{'height':'150px'}}/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="flex-grow-1 justify-content-evenly" >
-            <Nav.Link href="/debouchage" style={{color:"var(--orange)"}}>Débouchage</Nav.Link>
-            <Nav.Link href="/installation" style={{color:"var(--orange)"}}>Installation</Nav.Link>
-            <Nav.Link href="/entretien"  style={{color:"var(--orange)"}}>Entretien</Nav.Link>
-            <Nav.Link href="/depannage"  style={{color:"var(--orange)"}}>Dépannage</Nav.Link>
-  
-            <Nav.Link href="/contact" style={{color:"var(--orange)"}}>Contact</Nav.Link>
-          
-        <Navbar.Text>
-            <PhoneButton style={{color:"var(--orange)", textAlign:"center", border:'2px solid var(--orange)', borderRadius:"25px", padding:"14px", textDecoration:'none'}}><FaPhoneAlt /> 0472 01 47 58</PhoneButton>
-          </Navbar.Text></Nav>
-        </Navbar.Collapse>
-    
-      </Container>
-    </Navbar>
+              <Nav.Link href="/contact" style={{ color: "var(--orange)" }}>
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <Navbar.Text>
+            <PhoneButton id="btn-style"
+              style={{
+                color: "var(--orange)",
+                textAlign: "center",
+                border: "2px solid var(--orange)",
+                borderRadius: "25px",
+                padding: "14px",
+                textDecoration: "none",
+                cursor:'pointer'
+
+              }}
+            >
+              <FaPhoneAlt /> 0472 01 47 58
+            </PhoneButton>
+          </Navbar.Text>
+        </Container>
+      </Navbar>
     </>
-  );
-  
+  )
 }
 
-export default CollapsibleExample;
+export default CollapsibleExample
 
 const PhoneButton = styled.a`
-    border: 2px solid var(--orange);
-    color:var(--orange);
-    text-transform:uppercase;
-    border-radius: 50px;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 
+  a:hover {
+    transform: translateY(-2px);
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
 `

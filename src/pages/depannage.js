@@ -5,66 +5,55 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import {Col, Row} from 'react-bootstrap'
 import HeroImage from "../components/pagecmp/HeroImage"
-import depannage from "../assets/images/tt-depannage.jpg"
+import depannage from "../assets/images/tt-depannage.png"
 import PageHeader from "../components/pagecmp/PageHeader"
 import PageP from "../components/pagecmp/PageP"
 import ServicesList from "../components/pagecmp/ServicesList"
 import CardIcon from "../components/Card"
-import { BsCameraReels } from "react-icons/bs"
-import {AiOutlineEuro} from 'react-icons/ai'
-import {RiWindyFill} from 'react-icons/ri'
+import { TbFlame } from "react-icons/tb"
+import { AiOutlineEye, AiOutlineThunderbolt } from 'react-icons/ai'
+import BrandsBanner from "../components/pagecmp/BrandsBanner"
+
 
 const depannageData = {
-  pageheading: [
-    "Un évier bouché?",
-    "Une douche qui ne s’évacue plus?",
-    "Un sterput qui déborde?",
-    "On peut vous aider?",
-  ],
-  headline: "On peut vous aider?",
-  paragraph:
-    "Et oui, toutes les canalisations peuvent se boucher. En venir à bout être notre spécialité depuis plus de 15 ans. Que ce soit un bouchon tenace ou une installation mal pensée, nous avons tous les outils et l’expertise pour vous sortir de cette affaire ennuyeuse.",
+  paragraph:"Il y a des choses qui n’attendent pas. Quand il y a urgence, vous pouvez compter sur nous. Disponible 24/7 , nous nous déplaçons partout dans Bruxelles et ses environs. Que ce soit pour une chaudière qui ne démarre plus ou une fuite d’eau, composez notre numéro.",
   servicelist: [
-    "sanitaires",
-    "sterput",
-    "égouts",
-    "baignoire et douche",
-    "évier et lavabo",
-    "haute pression",
-    "au furet",
-    "canalisation/colonne Eau Fécale",
-    "canalisation/colonne Eau Usée",
-    "canalisation/colonne Eau Pluviale",
-    "réseau d'égouttage",
-    "Dégorgement de canalisations",
-    "Problèmes de siphon",
-    "Problèmes évacuation d’eaux",
-    "depannage des canalisations et égouts",
+    "chaudière au gaz en panne",
+    "réparation chaudière",
+    "remplacement chaudière",
+    "radiateurs froids",
+    "fuite d'eau",
+    "fuite de gaz",
+    "remplacement de sanitaire",
+    "robinet qui coule",
+    "problème de pression d'eau",
   ],
-  pagetitle: "débouchage",
+  pagetitle: "de dépannage",
 }
 
 const Depannage = props => (
   <Layout>
     <HeroImage title="depannage" img={depannage} />
-    <PageHeader pageheading={depannageData.pageheading} />
-    <PageP paragraph={depannageData.paragraph} />
+    <PageHeader pText="Fuite d’eau ?" color="white" />
+    <PageHeader pText="Chaudière en panne ?" color="white" />
+    <PageHeader pText="On arrive tout de suite !" color="orange" />    <PageP paragraph={depannageData.paragraph} />
     <IconsRow>
     <Col xs lg="3">
     <CardIcon
-      avatar={<BsCameraReels size={50} color={"var(--orange)"} />}
-      title="Inspection caméra thermique"
+      avatar={<AiOutlineEye size={70} color={"var(--orange)"} />}
+      title="Detection de fuites"
       color={"var(--orange)"}
     /></Col>
     <Col xs lg="3">
     <CardIcon
-      avatar={<RiWindyFill size={50} color={"var(--orange)"} />}
-      title="Débouchage haute pression"
+      avatar={<TbFlame size={70} color={"var(--orange)"} />}
+      title="Chaudière et chauffage"
       color={"var(--orange)"}
+    
     /> </Col>  <Col xs lg="3">
     <CardIcon
-      avatar={<AiOutlineEuro size={50} color={"var(--orange)"} />}
-      title="Prix abordables"
+      avatar={<AiOutlineThunderbolt size={70} color={"var(--orange)"} />}
+      title="Reparation rapide"
       color={"var(--orange)"}
     />
     </Col><Col xs lg="2"></Col>
@@ -74,6 +63,7 @@ const Depannage = props => (
       servicelist={depannageData.servicelist}
       pagetitle={depannageData.pagetitle}
     />
+    <BrandsBanner />
 
   </Layout>
 )
