@@ -21,7 +21,7 @@ export default HeroImage
 const HeroTitle = styled.div`
   font-size: clamp(2rem, 10vw, 4rem);
   font-weight: 700;
-  color: var(--white);
+  color: white;
   text-transform: uppercase;
   /* text-shadow: 2px 2px 4px #000000; */
   z-index: 100;
@@ -32,6 +32,10 @@ const HeroTitle = styled.div`
   transform: translate(-50%, -50%);
   background-color: transparent;
   text-shadow: 1px 1px 3px rgba(80, 80, 80, 0.8);
+  @media screen and (max-width: 960px) {
+    top: 34%;
+
+  }
   
   `
 
@@ -40,7 +44,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 auto;
-margin-bottom: clamp(3rem, 4vw, 6rem);
+margin-bottom: 6%;
   color: var(--white);
 `
 
@@ -52,6 +56,10 @@ const HeroBg = styled.div`
   width: 100%;
   height: 500px;
   overflow: hidden;
+  @media screen and (max-width: 960px) {
+    height: 300px;
+
+  }
 `
 
 const ImgBg = styled.div`
@@ -64,7 +72,7 @@ background-repeat: no-repeat;
   /* filter: sepia(var(--value, 100%)); */
   /* filter: sepia(100%) hue-rotate(-360deg); */
   @media screen and (max-width: 960px) {
-    height:200px;
+    img {height:300px;}
     }
  
 `

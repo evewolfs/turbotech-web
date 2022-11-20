@@ -12,10 +12,7 @@ export const GlobalStyle = createGlobalStyle `
     
 }
 
-main {
-  padding-left: 2%;
-  padding-right: 2%;
-}
+
 :root {
     --dark: #1C1C1C;
     --orange: #FE9D2B;

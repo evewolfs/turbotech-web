@@ -27,7 +27,8 @@ const ListItem = styled.li`
 const ListContainer = styled.div`
 
   text-align: left;
-
+  margin-top: 2%;
+  margin-bottom: 4%;
 `
 
 const ListTitle = styled.div`
@@ -40,10 +41,9 @@ const ListTitle = styled.div`
 
 const ParagraphRow = styled.div`
   display: flex;
-  /* width: 100%; */
-  width: clamp(30rem, 80vw, 60rem);
-  margin: 0 clamp(2rem, 2vw, 4rem);
-  padding: 0 clamp(1rem, 4vw, 2rem);
+  width: 100%;
+  margin: 1% 2% ;
+  padding: 1% 2%;
   /* margin: 3rem clamp(2rem, 2vw, 4rem);
   padding: 3rem clamp(1rem, 1vw, 2rem); */
 `

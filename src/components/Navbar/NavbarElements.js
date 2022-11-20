@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   top: 0;
   right: 0;
   margin: 0;
-  position: relative;
+  position: sticky;
   justify-content: space-between;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -25,6 +25,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
+  justify-content: start;
 
 
  
@@ -63,6 +64,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  
   @media screen and (max-width: 960px) {
     flex-direction: column;
     width: 100%;
@@ -90,7 +92,7 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.2rem 3rem;
+  padding: 0 8%;
   height: 100%;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -107,6 +109,8 @@ export const NavLinks = styled(Link)`
     color: var(--white);
   }
   button {
+   
+    margin-left: 20rem;
     border: 2px solid var(--orange);
     border-radius: 50px;
     color: var(--orange);
@@ -122,10 +126,13 @@ export const NavLinks = styled(Link)`
     vertical-align: middle;
     padding:0 1rem;
     margin-top: -2rem;
+    justify-self: flex-end;
+ 
     @media screen and (max-width: 960px) {
-        margin-right: 4rem;
+        margin-right: 6rem;
     margin-top: -4rem;
       padding:0 1rem;
+      margin-left: 1rem;
     }
   }
 

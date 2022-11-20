@@ -129,5 +129,5 @@ const TVAButton = styled.div`
 `
 
 const IconBox = styled.div`
-  padding: 2%;
+  padding: 8% 16%;
 `

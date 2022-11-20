@@ -73,23 +73,22 @@ export const Head = () => <Seo title="Page installation" />
 export default Installation
 
 const IconBox = styled.div`
-  padding: clamp(10rem,30vw, 30rem);
+  padding: 1%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
   
 `
 const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
   flex-wrap: wrap;
-  max-width: 100%;
-  margin-top: 8%;
+  width: 100%;
+  margin-top: 2%;
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: row;
+    width:100%;
   }
 `

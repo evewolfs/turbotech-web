@@ -6,23 +6,24 @@ function CardIcon({ avatar, title, children, ...rootProps }) {
       <Box
        
         minHeight={200}
-        padding={20}
-        width={300}
+        padding={"4%"}
+        width={250}
+        style={{verticalAlign:"top"}}
         
         {...rootProps}
       >
         {avatar ? (
           <Box
-            overflow="hidden"
+            overflow="hidden" display='flex' justifyContent="center" alignItems="center"
           >
             {avatar}
           </Box>
         ) : null}
         {title ? (
-          <Box fontSize="clamp(1rem, 2vw, 1.2rem)" margin="4%"   textTransform='uppercase' maxWidth="200px" textAlign='center'
+          <Box fontSize="clamp(1rem, 2vw, 1.2rem)" marginTop="8%"   textTransform='uppercase' maxWidth="200px" textAlign='center'
           display='flex'
           flexDirection="column"
-          alignItems="center" padding="1% 6%">
+          alignItems="center" justifyContent="center">
             {title}
           </Box>
         ) : null}
