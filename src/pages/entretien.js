@@ -35,33 +35,32 @@ const entretienData = {
 const Entretien = props => (
   <Layout>
     <HeroImage title="entretien" img={entretien} />
-    <PageHeader title="hello" />
-    {/* <PageHeader pText="Des radiateurs qui font du bruit ?" color="white" />
-    <PageHeader pText="Une chaudière fainéante ?" color="white" />
-    <PageHeader pText="Raz le bol du calcaire ?" color="white" />
-    <PageHeader pText="Jamais trop tôt pour nous appeler !" color="orange" />    <PageP paragraph={entretienData.paragraph} /> */}
+    <PageHeader title="Des radiateurs bruyants ?" color="white" />
+    <PageHeader title="Une chaudière fainéante ?" color="white" />
+    <PageHeader title="Trop de calcaire ?" color="white" />
+    <PageHeader title="Jamais trop tôt pour nous appeler !" color="orange" />    <PageP paragraph={entretienData.paragraph} />
     <IconsRow>
   
-    <Col xs lg="3">
+    
     <CardIcon
       avatar={<TbFlame size={70} color={"var(--orange)"} />}
       title="Chaudière et chauffage"
       color={"var(--orange)"}
     
     />   
-  </Col> 
-    <Col xs lg="3">
+   
+    
    <CardIcon
       avatar={<RiWaterFlashLine size={70} color={"var(--orange)"} />}
       title="Détartrage"
-      color={"var(--orange)"}/></Col>
-  <Col xs lg="3">
+      color={"var(--orange)"}/>
+  
     <CardIcon
       avatar={<RiWindyFill size={70} color={"var(--orange)"} />}
       title="Curage canalisations"
       color={"var(--orange)"}
     />
-    </Col><Col xs lg="2"></Col>
+
     </IconsRow>
 
     <ServicesList
@@ -78,17 +77,21 @@ export const Head = () => <Seo title="Page entretien" />
 export default Entretien
 
 const IconBox = styled.div`
-  padding: clamp(10rem,30vw, 30rem);
+  padding: 1%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
   
 `
-const IconsRow = styled(Row)`
+const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2%;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    width:100%;
+  }
 `

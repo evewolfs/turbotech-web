@@ -16,7 +16,7 @@ export default PageP
 const ParagraphRow = styled.div`
   display: flex;
   justify-content: center;
-  width: clamp(30rem, 80vw, 60rem);
+  width: clamp(26rem, 80vw, 60rem);
   margin: 1% 2% ;
   padding: 1% 2%;
 `

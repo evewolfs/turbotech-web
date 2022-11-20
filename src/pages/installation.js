@@ -35,7 +35,7 @@ const Installation = props => (
   <Layout>
     <HeroImage title="installation" img={installation} />
     <PageHeader title="Une salle de bain à refaire ?"color="var(--white)" />
-    <PageHeader title="Une chaudière à bout de souffle ?" color="var(--white)"/>
+    <PageHeader title="Une chaudière à remplacer ?" color="var(--white)"/>
     <PageHeader title="On s'en occupe !" color="var(--orange)"/>
  
      <PageP paragraph={installationData.paragraph} /> 
@@ -83,7 +83,6 @@ const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;
   flex-direction: row;
-
   flex-wrap: wrap;
   width: 100%;
   margin-top: 2%;

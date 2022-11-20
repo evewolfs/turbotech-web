@@ -25,10 +25,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
-  justify-content: start;
-
-
- 
+  justify-content: space-between;
 `
 export const NavLogo = styled(Link)`
   color: var(--white);
@@ -52,13 +49,10 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     top: -16px;
-    right: 0;
+    right: 20px;
     transform: translate(-10%, 60%);
     font-size: 2rem;
     cursor: pointer;
-
-
-
   }
 `
 export const NavMenu = styled.ul`
@@ -66,17 +60,15 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  
+
   @media screen and (max-width: 960px) {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-padding: 2%;
+    padding: 2%;
     position: fixed;
     top: 80px;
     right: 0;
-    
-  
     opacity: ${({ click }) => (click ? 1 : 0)};
     visibility: ${({ click }) => (click ? "visible" : "hidden")};
     transform: ${({ click }) => (click ? "translate(0)" : "translate(100%)")};
@@ -97,11 +89,11 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 8%;
+  padding: 0 6%;
   height: 100%;
   width: 100%;
   margin-top: 1rem;
-  margin-left: 1rem;
+
   color: var(--orange);
 
   height: 80px;
@@ -115,7 +107,6 @@ export const NavLinks = styled(Link)`
     color: var(--white);
   }
   button {
-   
     display: inline-block;
     border: 2px solid var(--orange);
     border-radius: 50px;
@@ -123,26 +114,24 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     font-size: 1.1rem;
     white-space: nowrap;
-    min-width: 60px;
-    max-width:200px;
+    width: 18%;
     background: var(--dark);
     height: 40px;
-    
     font-weight: 600;
     vertical-align: middle;
-    padding:0 1rem;
+    padding: 0 1%;
+    right: 20px;
     margin-top: -2rem;
-    margin-left: 18rem;
-    position: relative;
- 
+    position: absolute;
+
     @media screen and (max-width: 960px) {
-    margin-top: -8.5rem;
-      padding:0 0.5rem;
+      margin-top: -8.5rem;
+      padding: 0 0.5rem;
       margin-left: 0.3rem;
-    position: relative;
-    right: 10%;
-    top:36px;
-     
+      position: relative;
+      right: 10%;
+      top: 36px;
+      min-width: 200px;
     }
   }
 

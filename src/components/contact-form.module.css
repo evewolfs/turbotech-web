@@ -4,10 +4,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin-left: 16%;
-    margin-right: 16%;
-    margin-top: 0;
-    margin-bottom: 8%;
+
+    margin: 1% 2%;
+    padding: 1% 2%;
+    margin-bottom: 4%;
+
 
  
   }

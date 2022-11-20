@@ -15,7 +15,7 @@ import BrandsBanner from "../components/pagecmp/BrandsBanner"
 
 const depannageData = {
   paragraph:
-    "Il y a des choses qui n’attendent pas. Quand il y a urgence, vous pouvez compter sur nous. Disponible 24/7 , nous nous déplaçons partout dans Bruxelles et ses environs. Que ce soit pour une chaudière qui ne démarre plus ou une fuite d’eau, composez notre numéro.",
+    "Il y a des choses qui n’attendent pas. Quand il y a urgence, vous pouvez compter sur nous. Disponible 24/7, nous nous déplaçons partout dans Bruxelles et ses environs. Que ce soit pour une chaudière qui ne démarre plus ou une fuite d’eau, composez notre numéro.",
   servicelist: [
     "chaudière au gaz en panne",
     "réparation chaudière",

@@ -44,8 +44,11 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 auto;
-margin-bottom: 6%;
+margin-bottom: 4%;
   color: var(--white);
+  @media screen and (max-width: 960px) {
+    margin-bottom: 8%;
+  }
 `
 
 const HeroBg = styled.div`

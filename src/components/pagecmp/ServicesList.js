@@ -8,7 +8,7 @@ function ServicesList(props) {
     
    
         <ListContainer>
-          <ListTitle>Quel genre {props.pagetitle} ?</ListTitle>
+          <ListTitle>Types {props.pagetitle} </ListTitle>
           <br /> {map1}
         </ListContainer>
    
