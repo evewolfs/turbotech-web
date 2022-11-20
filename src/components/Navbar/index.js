@@ -40,11 +40,14 @@ const Navbar = () => {
 <IconContext.Provider value={{color: "orange"}}>
 <Nav active={scroll} click={click}>
 <NavbarContainer>
+   
     <NavLogo to='/index' onClick={closeMobileMenu}>
-    <Turbotech style={{ width: "100px", top:"20px" }} />    </NavLogo>
-    <MobileIcon onClick={handleClick}>
+    <Turbotech style={{ width: "100px", top:"20px" }} />    
+</NavLogo>
+<MobileIcon onClick={handleClick}>
         {click ? <FaTimes /> : <FaBars />}
     </MobileIcon>
+
     <NavMenu onClick={handleClick} click={click} >
         <NavLinks to='/debouchage'>Debouchage</NavLinks>
         <NavLinks to='/installation'>Installation</NavLinks>
@@ -53,11 +56,12 @@ const Navbar = () => {
         <NavLinks to='/contact'>Contact</NavLinks>
     </NavMenu>
    
-    <NavLinks to='tel:0755324567'><button> <FaPhoneAlt />    0477 36 57 21</button></NavLinks>
 
       
      
 </NavbarContainer>
+<NavLinks href='tel:0755324567'><button> <FaPhoneAlt />    0477 36 57 21</button></NavLinks>
+
 </Nav>
 </IconContext.Provider>
 </>
