@@ -35,10 +35,11 @@ const entretienData = {
 const Entretien = props => (
   <Layout>
     <HeroImage title="entretien" img={entretien} />
-    <PageHeader pText="Des radiateurs qui font du bruit ?" color="white" />
+    <PageHeader title="hello" />
+    {/* <PageHeader pText="Des radiateurs qui font du bruit ?" color="white" />
     <PageHeader pText="Une chaudière fainéante ?" color="white" />
     <PageHeader pText="Raz le bol du calcaire ?" color="white" />
-    <PageHeader pText="Jamais trop tôt pour nous appeler !" color="orange" />    <PageP paragraph={entretienData.paragraph} />
+    <PageHeader pText="Jamais trop tôt pour nous appeler !" color="orange" />    <PageP paragraph={entretienData.paragraph} /> */}
     <IconsRow>
   
     <Col xs lg="3">

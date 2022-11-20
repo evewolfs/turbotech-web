@@ -5,8 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import {Col, Row} from 'react-bootstrap'
 import HeroImage from "../components/pagecmp/HeroImage"
-import depannage from "../assets/images/tt-depannage.jpg"
-import PageHeader from "../components/pagecmp/PageHeader"
+import debouchage from "../assets/images/tt-debouchage.png"
 import PageP from "../components/pagecmp/PageP"
 import ServicesList from "../components/pagecmp/ServicesList"
 import CardIcon from "../components/Card"
@@ -37,11 +36,8 @@ const debouchageData = {
 
 const Debouchage = props => (
   <Layout>
-    <HeroImage title="débouchage" img={depannage} />
-    <PageHeader pText="Un évier bouché?" color="white" />
-    <PageHeader pText="Une douche qui ne s’évacue plus?" color="white" />
-    <PageHeader pText="Un sterput qui déborde?" color="white" />
-    <PageHeader pText="On peut vous aider?" color="orange" />
+    <HeroImage title="débouchage" img={debouchage} />
+ 
     <PageP paragraph={debouchageData.paragraph} />
     <IconsRow>
     <Col xs lg="3">

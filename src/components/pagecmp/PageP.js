@@ -1,21 +1,19 @@
 import React from "react"
 import styled from "styled-components"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 
 const PageP = props => {
   return (
     <ParagraphRow>
-      <Col xs lg="10">
+ 
         <CardP>{props.paragraph}</CardP>
-      </Col>
+   
     </ParagraphRow>
   )
 }
 
 export default PageP
 
-const ParagraphRow = styled(Row)`
+const ParagraphRow = styled.div`
   display: flex;
   justify-content: center;
   width: clamp(30rem, 80vw, 60rem);
@@ -26,7 +24,7 @@ const ParagraphRow = styled(Row)`
 const CardP = styled.div`
   color: var(--white);
   font-size: clamp(1.4rem, 3vw, 1.6rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: clamp(1.6rem, 3vw, 2rem);
   text-align: left;
   text-align: left;

@@ -1,9 +1,6 @@
 import React from "react"
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 import styled from "styled-components"
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { Debouchage } from "./icons/Debouchage"
 import { Depannage } from "./icons/Depannage"
 import { Entretien } from "./icons/Entretien"
@@ -12,69 +9,103 @@ import { Installation } from "./icons/Installation"
 const Services = () => {
   return (
     <ServicesContainer>
-    <Row className="justify-content-md-center" >
-     <Col xs lg="4">
-     <Link href="/installation">
-      <ServiceItem>
-        <Installation />
-        <ServiceTitle>Installation</ServiceTitle>
-      </ServiceItem>
-      </Link>
-     </Col> 
+      <StyledRow>
+        <StyledCol>
+          <ServiceLink href="/installation">
+            <ServiceItem>
+              <Installation />
+              <ServiceTitle>Installation</ServiceTitle>
+            </ServiceItem>
+          </ServiceLink>
+        </StyledCol>
 
-      <Col xs lg="4">
-      <Link href="/debouchage">
- <ServiceItem >
-        <Debouchage />
-        <ServiceTitle> Débouchage</ServiceTitle>
-      </ServiceItem>
-      </Link>
-      </Col>
- </Row> 
- <Row className="justify-content-md-center" >
+        <StyledCol>
+          <ServiceLink href="/debouchage">
+            <ServiceItem>
+              <Debouchage />
+              <ServiceTitle> Débouchage</ServiceTitle>
+            </ServiceItem>
+          </ServiceLink>
+        </StyledCol>
+      </StyledRow>
+      <StyledRow>
+        <StyledCol>
+          <ServiceLink href="/depannage">
+            <ServiceItem>
+              <Depannage />
+              <ServiceTitle>Dépannage</ServiceTitle>
+            </ServiceItem>{" "}
+          </ServiceLink>{" "}
+        </StyledCol>
 
-     <Col xs lg="4">
-     <Link href="/depannage">
-      <ServiceItem>
-        <Depannage />
-        <ServiceTitle>Dépannage</ServiceTitle>     
-      </ServiceItem> </Link> </Col>
-
-      <Col xs lg="4">
-      <Link href="/entretien">
-      <ServiceItem>
-        <Entretien />
-        <ServiceTitle>Entretien </ServiceTitle>
-
-      </ServiceItem>
-      </Link>
-      </Col>
-      </Row>
+        <StyledCol>
+          <ServiceLink href="/entretien">
+            <ServiceItem>
+              <Entretien />
+              <ServiceTitle>Entretien </ServiceTitle>
+            </ServiceItem>
+          </ServiceLink>
+        </StyledCol>
+      </StyledRow>
     </ServicesContainer>
   )
 }
 
 export default Services
 
-const ServicesContainer = styled(Container)`
-padding-top:4%;
-padding-bottom:4%;
+const ServicesContainer = styled.div`
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin: 0 16%;
+  @media (max-width: 768px) {
+    margin: 0 4%;
+    padding: 2%;
+  }
+`
+const ServiceLink = styled(Link)`
+text-decoration: none;
 `
 
-const ServicesRow = styled(Row)`
+const StyledRow = styled.div`
+  display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+  width: 100%;
+`
+
+const StyledCol = styled.div`
+padding:0;
 display: flex;
-    margin: 0 auto;
-    justify-content: center;
+  flex-direction: column;
+  flex-basis: 100%;
+
+
+
+@media screen and (min-width: 800px) {
+  flex: 1;
+ 
+  }
+
 `
 const ServiceItem = styled.div`
   padding: 1.8rem;
-  margin: 1.2rem;
+  margin: 1rem;
   border-radius: 4px;
   border: 1px solid var(--white);
+
   &:hover {
     transform: translateY(-4px);
-}
-  `
+    color: var(--orange);
+    border: 1px solid var(--orange);
+  
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+
+    width:100%;
+  }
+`
 
 const ServiceTitle = styled.div`
   text-transform: uppercase;
@@ -84,8 +115,10 @@ const ServiceTitle = styled.div`
   font-size: 2rem;
   margin-top: 6%;
   letter-spacing: 1px;
-
-
+  text-decoration: none !important;
+  &:hover {
+    color: var(--orange);
+  }
 
 
 `

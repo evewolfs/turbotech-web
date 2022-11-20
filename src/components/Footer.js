@@ -1,8 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 import { RiFacebookCircleLine } from "react-icons/ri"
 import { FiMail } from "react-icons/fi"
 
@@ -10,7 +7,7 @@ const Footer = () => {
   return (
     <StyledContainer>
       <StyledRow>
-        <StyledCol xs lg="4">
+        <StyledCol>
           <FooterText>
             {" "}
             Besoin d’un devis <br />
@@ -20,7 +17,7 @@ const Footer = () => {
         </StyledCol>
       </StyledRow>
       <DarkRow>
-        <Col xs lg="4">
+        <StyledCol>
           <LinkBanner>
             <IconBox>
               {" "}
@@ -44,7 +41,7 @@ const Footer = () => {
               </a>
             </IconBox>
           </LinkBanner>
-        </Col>{" "}
+        </StyledCol>{" "}
       </DarkRow>
     </StyledContainer>
   )
@@ -52,7 +49,7 @@ const Footer = () => {
 
 export default Footer
 
-const StyledContainer = styled(Container)`
+const StyledContainer = styled.div`
   color: white;
   background-color: none;
   width: 100%;
@@ -61,7 +58,7 @@ const StyledContainer = styled(Container)`
   padding: 0 auto;
 `
 
-const StyledRow = styled(Row)`
+const StyledRow = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -70,7 +67,7 @@ const StyledRow = styled(Row)`
   background-color: var(--orange);
 `
 
-const DarkRow = styled(Row)`
+const DarkRow = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -79,7 +76,7 @@ const DarkRow = styled(Row)`
   background-color: var(--dark);
 `
 
-const StyledCol = styled(Col)`
+const StyledCol = styled.div`
   background-color: var(--orange);
 `
 

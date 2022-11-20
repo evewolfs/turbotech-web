@@ -19,7 +19,10 @@ function CardIcon({ avatar, title, children, ...rootProps }) {
           </Box>
         ) : null}
         {title ? (
-          <Box fontSize="clamp(1rem, 2vw, 1.2rem)" padding="10px 0">
+          <Box fontSize="clamp(1rem, 2vw, 1.2rem)" margin="4%"   textTransform='uppercase' maxWidth="200px" textAlign='center'
+          display='flex'
+          flexDirection="column"
+          alignItems="center" padding="1% 6%">
             {title}
           </Box>
         ) : null}

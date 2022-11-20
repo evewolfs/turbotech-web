@@ -5,17 +5,20 @@ function Box({
   fontSize,
   fontWeight = '600', 
   color,
-  maxWidth="200px",
+  maxWidth,
   minHeight,
-  margin="4%",
-  padding="6%",
+  margin,
+  marginTop,
+  padding,
   width,
   overflow,
-  textTransform='uppercase',
-  textAlign='center',
-  display='flex',
-  flexDirection="column",
-  alignItems="center",
+  textTransform,
+  textAlign,
+  display,
+  flexDirection,
+  alignItems,
+  justifyContent,
+  position,
 
   style,
   ...props
@@ -23,7 +26,7 @@ function Box({
   return (
     <div
       {...props}
-      style={{ color,fontSize, fontWeight, minHeight, margin, padding, width, display, maxWidth, textTransform, alignItems, overflow, flexDirection, textAlign, ...style }}
+      style={{ color,fontSize, fontWeight, minHeight, padding, width, marginTop, display, maxWidth, textTransform, alignItems, overflow, justifyContent, flexDirection, textAlign, position, ...style }}
     >
       {children}
     </div>

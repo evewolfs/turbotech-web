@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import {Col, Row} from 'react-bootstrap'
 import HeroImage from "../components/pagecmp/HeroImage"
 import installation from "../assets/images/tt-installation.png"
 import PageHeader from "../components/pagecmp/PageHeader"
@@ -35,29 +34,29 @@ const installationData = {
 const Installation = props => (
   <Layout>
     <HeroImage title="installation" img={installation} />
-    <PageHeader pText="Une salle de bain à refaire?" color="white" />
-    <PageHeader pText="Une chaudière en fin de vie?" color="white" />
-    <PageHeader pText="On s'en occupe !" color="orange" />    <PageP paragraph={installationData.paragraph} />
+    <PageHeader title="Une salle de bain à refaire ?"color="var(--white)" />
+    <PageHeader title="Une chaudière à bout de souffle ?" color="var(--white)"/>
+    <PageHeader title="On s'en occupe !" color="var(--orange)"/>
+ 
+     <PageP paragraph={installationData.paragraph} /> 
     <IconsRow>
-    <Col xs lg="3">
     <CardIcon
       avatar={<BiWater size={70} color={"var(--orange)"} />}
       title="Sanitaires de tous type"
       color={"var(--orange)"}
-    /></Col>
-    <Col xs lg="3">
+    />
     <CardIcon
       avatar={<TbFlame size={70} color={"var(--orange)"} />}
       title="Chaudière et chauffage"
       color={"var(--orange)"}
     
-    /> </Col>  <Col xs lg="3">
+    /> 
     <CardIcon
       avatar={<TbArrowsRandom size={70} color={"var(--orange)"} />}
       title="Système d'égouttage"
       color={"var(--orange)"}
     />
-    </Col><Col xs lg="2"></Col>
+
     </IconsRow>
 
     <ServicesList
@@ -81,10 +80,16 @@ const IconBox = styled.div`
   justify-content: center;
   
 `
-const IconsRow = styled(Row)`
+const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-top: 8%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `

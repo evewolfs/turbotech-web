@@ -19,9 +19,9 @@ const HeroImage = props => {
 export default HeroImage
 
 const HeroTitle = styled.div`
-  font-size: clamp(2rem, 12vw, 4rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   font-weight: 700;
-  color: var(--white);
+  color: #fff;
   text-transform: uppercase;
   /* text-shadow: 2px 2px 4px #000000; */
   z-index: 100;
@@ -32,14 +32,14 @@ const HeroTitle = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-`
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);`
 
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 auto;
-margin-bottom: 4%;
+margin-bottom: clamp(3rem, 4vw, 6rem);
   color: var(--white);
 `
 
@@ -59,7 +59,7 @@ const ImgBg = styled.div`
   /* -o-object-fit: none; */
   object-fit: scale-down;
   background-position: -500px -500px;
-  filter: sepia(var(--value, 100%));
+  /* filter: sepia(var(--value, 100%)); */
   /* filter: sepia(100%) hue-rotate(-360deg); */
  
 `

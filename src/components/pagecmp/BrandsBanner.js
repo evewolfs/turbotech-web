@@ -17,13 +17,13 @@ import PageHeader from './PageHeader'
 
 const BrandsBanner = () => {
   return (
-    <BBContainer fluid>
-        <PageHeader pText="Nos marques favorites"/>
+
+        
     <ParagraphRow>
- 
-         <Col xs="4" lg="9"><img src={Vaillant} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
+ <PageHeader pText="Nos marques favorites"/>
+       <img src={Vaillant} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Viessman} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
-         <img src={Facq} style={{width:'100px', transform:'translateY(0px)'}} />
+         <img src={Facq} style={{width:'clamp(6rem,6vw,24rem)', height:'100%', transform:'translateY(62px)'}} />
          <img src={Vanmarcke} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Bulex} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
         <img src={Daikin} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
@@ -31,30 +31,26 @@ const BrandsBanner = () => {
          <img src={Junkers} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Bosch} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Fernox} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
-         </Col>
-         <Col xs lg="2"></Col>
    </ParagraphRow>
-   </BBContainer>
+
 )   
 }
 
 export default BrandsBanner
 
-const BBContainer = styled(Container)`
-margin: 0 auto;
+const BBContainer = styled.div`
+margin: 0;
 padding: 0;
 
     list-style-type: none;
   ` 
 
-const ParagraphRow = styled(Row)`
+const ParagraphRow = styled.div`
   display: flex;
-
-  justify-content: center;
-  width: clamp(100rem, 100vw, 140rem);
+  width: 100%;
   margin: 0 clamp(2rem, 2vw, 4rem);
-  padding: 0 clamp(1rem, 1vw, 2rem);
-  overflow: hidden;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  flex-wrap: wrap;
 
 `
 
