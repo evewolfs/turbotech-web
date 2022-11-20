@@ -26,7 +26,7 @@ const ListContainer = styled.div`
 
 const ListTitle = styled.div`
   color: var(--white);
-  font-size: clamp(1.4rem, 6vw, 2rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 600;
   line-height: 2.2rem;
   text-align: left;
@@ -34,9 +34,11 @@ const ListTitle = styled.div`
 
 const ParagraphRow = styled.div`
   display: flex;
-  justify-content: left;
-  width: 100%;
 
-  margin: 3rem clamp(2rem, 2vw, 4rem);
-  padding: 3rem clamp(1rem, 1vw, 2rem);
+  /* width: 100%; */
+  width: clamp(30rem, 80vw, 60rem);
+  margin: 0 clamp(2rem, 2vw, 4rem);
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  /* margin: 3rem clamp(2rem, 2vw, 4rem);
+  padding: 3rem clamp(1rem, 1vw, 2rem); */
 `

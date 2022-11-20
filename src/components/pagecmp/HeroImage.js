@@ -21,18 +21,19 @@ export default HeroImage
 const HeroTitle = styled.div`
   font-size: clamp(2rem, 10vw, 4rem);
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   /* text-shadow: 2px 2px 4px #000000; */
   z-index: 100;
-  text-align: left;
   display: inline;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);`
+  text-shadow: 1px 1px 3px rgba(80, 80, 80, 0.8);
+  
+  `
 
 const HeroContainer = styled.div`
   display: flex;
@@ -58,8 +59,12 @@ const ImgBg = styled.div`
   height: 100%;
   /* -o-object-fit: none; */
   object-fit: scale-down;
-  background-position: -500px -500px;
+  background-size: cover;
+background-repeat: no-repeat;
   /* filter: sepia(var(--value, 100%)); */
   /* filter: sepia(100%) hue-rotate(-360deg); */
+  @media screen and (max-width: 960px) {
+    height:200px;
+    }
  
 `

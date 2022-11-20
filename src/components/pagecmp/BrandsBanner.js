@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components"
-import {Container, Row, Col} from "react-bootstrap"
 import Bosch from '../../assets/images/bosch.png'
 import Bulex from '../../assets/images/bulex.png'
 import Daikin from '../../assets/images/daikin.png'
@@ -20,7 +19,8 @@ const BrandsBanner = () => {
 
         
     <ParagraphRow>
- <PageHeader pText="Nos marques favorites"/>
+    <PageHeader title="Nos marques favorites"color="var(--white)" />
+
        <img src={Vaillant} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Viessman} style={{width:'clamp(10rem,15vw,30rem)',padding:'4%' }} />
          <img src={Facq} style={{width:'clamp(6rem,6vw,24rem)', height:'100%', transform:'translateY(62px)'}} />
@@ -38,27 +38,17 @@ const BrandsBanner = () => {
 
 export default BrandsBanner
 
-const BBContainer = styled.div`
-margin: 0;
-padding: 0;
 
-    list-style-type: none;
-  ` 
 
 const ParagraphRow = styled.div`
   display: flex;
+
+  justify-content:space-evenly;
   width: 100%;
-  margin: 0 clamp(2rem, 2vw, 4rem);
-  padding: 0 clamp(1rem, 4vw, 2rem);
+  margin: 0 -1%;
+  padding: 4% 2%;
   flex-wrap: wrap;
 
 `
 
 
-const ListTitle = styled.div`
-  color: var(--white);
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.2rem;
-
-`
