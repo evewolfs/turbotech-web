@@ -60,7 +60,7 @@ const Navbar = () => {
 
      
 </NavbarContainer>
-<NavLinks to='tel:0755324567'><button> <FaPhoneAlt />    0477 36 57 21</button></NavLinks>
+<NavLinks to='tel:0755324567'><button> <FaPhoneAlt /><h4>0477 36 57 21</h4></button></NavLinks>
 
 </Nav>
 </IconContext.Provider>

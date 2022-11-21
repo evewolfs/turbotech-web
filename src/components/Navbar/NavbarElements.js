@@ -131,10 +131,21 @@ export const NavLinks = styled(Link)`
       position: relative;
       right: 10%;
       top: 36px;
-      min-width: 200px;
+      min-width: 20%;
+
+      
+
     }
   }
-
+h4 {
+  font-size: 1.1rem;
+  font-weight:600;
+  display: inline-block;
+  padding: 0 1%;
+  @media screen and (max-width: 960px) {
+    display: none !important;
+  }
+}
   @media screen and (max-width: 960px) {
     text-align: center;
     background: var(--dark);
@@ -146,6 +157,7 @@ export const NavLinks = styled(Link)`
       color: var(--white);
       transition: all 0.3s ease;
     }
+    
   }
 `
 
