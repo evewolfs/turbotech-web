@@ -41,7 +41,7 @@ const Navbar = () => {
 <Nav active={scroll} click={click}>
 <NavbarContainer>
    
-    <NavLogo to='/index' onClick={closeMobileMenu}>
+    <NavLogo to='/' onClick={closeMobileMenu}>
     <Turbotech style={{ width: "100px", top:"20px" }} />    
 </NavLogo>
 <MobileIcon onClick={handleClick}>

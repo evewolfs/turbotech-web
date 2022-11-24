@@ -11,7 +11,7 @@ const Services = () => {
     <ServicesContainer>
       <StyledRow>
         <StyledCol>
-          <ServiceLink href="/installation">
+          <ServiceLink to="/installation">
             <ServiceItem>
               <Installation />
               <ServiceTitle>Installation</ServiceTitle>
@@ -20,7 +20,7 @@ const Services = () => {
         </StyledCol>
 
         <StyledCol>
-          <ServiceLink href="/debouchage">
+          <ServiceLink to="/debouchage">
             <ServiceItem>
               <Debouchage />
               <ServiceTitle> Débouchage</ServiceTitle>
@@ -30,7 +30,7 @@ const Services = () => {
       </StyledRow>
       <StyledRow>
         <StyledCol>
-          <ServiceLink href="/depannage">
+          <ServiceLink to="/depannage">
             <ServiceItem>
               <Depannage />
               <ServiceTitle>Dépannage</ServiceTitle>
@@ -39,7 +39,7 @@ const Services = () => {
         </StyledCol>
 
         <StyledCol>
-          <ServiceLink href="/entretien">
+          <ServiceLink to="/entretien">
             <ServiceItem>
               <Entretien />
               <ServiceTitle>Entretien </ServiceTitle>

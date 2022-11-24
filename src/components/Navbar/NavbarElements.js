@@ -79,6 +79,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  text-align: center; 
 
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -123,6 +124,7 @@ export const NavLinks = styled(Link)`
     right: 20px;
     margin-top: -2rem;
     position: absolute;
+ 
 
     @media screen and (max-width: 960px) {
       margin-top: -8.5rem;
@@ -139,9 +141,16 @@ export const NavLinks = styled(Link)`
   }
 h4 {
   font-size: 1.1rem;
+  background: none;
   font-weight:600;
-  display: inline-block;
-  padding: 0 1%;
+  display: inline-flex;
+  padding: 2%;
+  margin: -8% 1%;
+  text-align: center; 
+  justify-content: center;
+
+
+    line-height: 65px;
   @media screen and (max-width: 960px) {
     display: none !important;
   }

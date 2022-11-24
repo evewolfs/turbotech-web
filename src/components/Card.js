@@ -7,7 +7,7 @@ function CardIcon({ avatar, title, children, ...rootProps }) {
        
         minHeight={200}
         padding={"4%"}
-        width={250}
+        width={200}
         style={{verticalAlign:"top"}}
         
         {...rootProps}

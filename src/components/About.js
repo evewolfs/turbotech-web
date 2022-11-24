@@ -55,8 +55,8 @@ export default About
 
 const AboutContainer = styled.div`
   padding-top: 8%;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 20%;
+  margin-right: 20%;
   overflow: hidden;
   @media (max-width: 768px) {
     margin: 2%;
