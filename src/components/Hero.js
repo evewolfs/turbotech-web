@@ -27,7 +27,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   margin-top: 200px;
   padding-bottom: 20px;
@@ -42,6 +42,12 @@ const HeroContainer = styled.div`
     left: 0;
     z-index: 0;
   }
+
+  @media (max-width: 768px) {
+    height: 10vh;
+
+  }
+
 `
 const HeroBg = styled.div`
   position: absolute;

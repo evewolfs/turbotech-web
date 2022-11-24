@@ -1,9 +1,16 @@
-import React from "react"
+import React, {useState} from "react"
 import styled from "styled-components"
 import { RiFacebookCircleLine } from "react-icons/ri"
 import { FiMail } from "react-icons/fi"
 
 const Footer = () => {
+
+  const [buttonText, setButtonText] = useState('TVA');
+
+  function handleClick() {
+    setButtonText('N° TVA 9532 4567 7890');
+  }
+
   return (
     <StyledContainer>
       <StyledRow>
@@ -13,7 +20,7 @@ const Footer = () => {
             Besoin d’un devis <br />
             ou d’un rendez-vous?
           </FooterText>
-          <FooterButton>Appelez-nous</FooterButton>
+          <FooterButton to='tel:0755324567'>Appelez-nous</FooterButton>
         </StyledCol>
       </StyledRow>
       <DarkRow>
@@ -21,24 +28,24 @@ const Footer = () => {
           <LinkBanner>
             <IconBox>
               {" "}
-              <a href="example.com">
+              <a href="https://www.facebook.com/moustafa.chaou">
                 <RiFacebookCircleLine
-                  size={34}
+                  size={46}
                   style={{ textDecoration: "none" }}
                 />
               </a>
             </IconBox>
             <IconBox>
               {" "}
-              <a href="example.com" style={{ textDecoration: "none" }}>
-                <FiMail size={30} />
+              <a href="mailto:turbotech.brussels@gmail.com" style={{ textDecoration: "none" }}>
+                <FiMail size={42} />
               </a>
             </IconBox>
             <IconBox>
               {" "}
-              <a href="examle.com" style={{ textDecoration: "none" }}>
-                <TVAButton>TVA</TVAButton>
-              </a>
+             
+                <TVAButton onClick={handleClick} style={{ textDecoration: "none" }}>{buttonText}</TVAButton>
+          
             </IconBox>
           </LinkBanner>
         </StyledCol>{" "}
@@ -89,7 +96,7 @@ const FooterText = styled.div`
   background-color: var(--orange);
 `
 
-const FooterButton = styled.div`
+const FooterButton = styled.button`
   margin: 4% 2%;
   padding: 0.5rem 0.75rem;
   text-align: center;
@@ -103,7 +110,7 @@ const FooterButton = styled.div`
   border-radius: 50px;
   :hover {
     color: var(--white);
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     transform: translateY(-2px);
   }
 `
@@ -115,19 +122,37 @@ const LinkBanner = styled.div`
   text-decoration: none;
   color: var(--white) !important;
 `
-const TVAButton = styled.div`
+const TVAButton = styled.button`
   color: var(--white);
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 600;
-  border: 2px solid var(--white);
-  border-radius: 19px;
+  border: 3px solid var(--white);
+  border-radius: 50px;
   padding: 6px;
+  white-space: nowrap;
   :hover {
     color: var(--orange);
-    border: 2px solid var(--orange);
+    border: 3px solid var(--orange);
   }
 `
 
 const IconBox = styled.div`
   padding: 8%;
+
+  a{
+    :hover {
+      color: var(--orange);
+    text-decoration: none;
+    }
+
+    :link{ color: inherit;
+    text-decoration: none;}
+   :visited{ color: inherit;
+    text-decoration: none;}
+   :focus{ color: inherit;
+    text-decoration: none;}
+   :active{ color: inherit;
+    text-decoration: none;}
+  }
+
 `
