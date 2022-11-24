@@ -4,7 +4,7 @@ import { form, fieldErrors, formErrors } from "./contact-form.module.css"
 
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("contact");
+  const [state, handleSubmit] = useForm("mgeqlago");
 
   if (state.succeeded) {
     return <p>Merci pour votre message</p>;
