@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/turbotech-web",
   siteMetadata: {
     title: `Turbotech chauffage et débouchage`,
     description: `Entreprise spécialisée en débouchage de canalisations et dépannage de chauffage et chaudière`,
