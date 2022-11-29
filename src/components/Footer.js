@@ -69,9 +69,13 @@ const StyledRow = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  align-items: center;
+  padding: 3% 0;
   background-color: var(--orange);
+  @media (max-width: 768px) {
+    padding: 6% 0;
+    margin: 6% 0;
+  }
 `
 
 const DarkRow = styled.div`
@@ -85,9 +89,14 @@ const DarkRow = styled.div`
 
 const StyledCol = styled.div`
   background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
 
 const FooterText = styled.div`
+display: flex;
   color: var(--dark);
   font-size: 1.6rem;
   font-weight: 600;
@@ -97,6 +106,7 @@ const FooterText = styled.div`
 `
 
 const FooterButton = styled.button`
+display: flex;
   margin: 4% 2%;
   padding: 0.5rem 0.75rem;
   text-align: center;

@@ -13,6 +13,8 @@ export const Nav = styled.nav`
   margin: 0;
   position: sticky;
   justify-content: space-between;
+ 
+ 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -46,13 +48,21 @@ export const NavIcon = styled(FaHamburger)`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
+    display: flex;
+    /* position: absolute;
     top: -16px;
-    right: 20px;
+    right: 20px; */
     transform: translate(-10%, 60%);
     font-size: 2rem;
+ margin:0;
+ padding: 0;
+ position: relative;
     cursor: pointer;
+    height: 100px;
+    top:-36px;
+    background: none;
+    margin: 0 30%;
+  
   }
 `
 export const NavMenu = styled.ul`
@@ -127,13 +137,15 @@ export const NavLinks = styled(Link)`
  
 
     @media screen and (max-width: 960px) {
-      margin-top: -8.5rem;
-      padding: 0 0.5rem;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      /* margin-top: -8.5rem;
+      padding: 2%;
       margin-left: 0.3rem;
       position: relative;
       right: 10%;
-      top: 36px;
-      min-width: 20%;
+      min-width: 20%; */
 
       
 
