@@ -47,7 +47,7 @@ const Debouchage = props => (
    
     <CardIcon
       avatar={<BsCameraReels size={50} color={"var(--orange)"} />}
-      title="Inspection caméra thermique"
+      title="Inspection caméra endoscopique"
       color={"var(--orange)"}
     />
    
