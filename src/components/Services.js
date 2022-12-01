@@ -81,8 +81,11 @@ display: flex;
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   flex: 1;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
  
   }
 
@@ -102,7 +105,7 @@ const ServiceItem = styled.div`
 
   @media (max-width: 768px) {
     justify-content: center;
-
+    margin: 1rem 0;
     width:100%;
   }
 `

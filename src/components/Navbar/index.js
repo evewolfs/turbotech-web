@@ -5,7 +5,7 @@ import {
     MobileIcon,
     Nav,
     NavbarContainer,
-    NavTel,
+    PhoneLink,
     NavLinks,
     NavLogo,
     NavMenu,
@@ -42,7 +42,7 @@ const Navbar = () => {
 <NavbarContainer>
    
     <NavLogo to='/' onClick={closeMobileMenu}>
-    <Turbotech style={{ width: "100px", top:"20px" }} />    
+    <Turbotech />    
 </NavLogo>
 <MobileIcon onClick={handleClick}>
         {click ? <FaTimes /> : <FaBars />}
@@ -58,9 +58,9 @@ const Navbar = () => {
    
 
 
+<PhoneLink to='tel:0755324567'><FaPhoneAlt style={{display:"flex", alignSelf:"center"}} /><h4>0477 36 57 21</h4></PhoneLink>
      
 </NavbarContainer>
-<NavLinks to='tel:0755324567'><button> <FaPhoneAlt /><h4>0477 36 57 21</h4></button></NavLinks>
 
 </Nav>
 </IconContext.Provider>

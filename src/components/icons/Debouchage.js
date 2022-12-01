@@ -1,12 +1,11 @@
 import React from "react"
-import { motion } from "framer-motion"
 
 
 
 
 export const Debouchage = ({ className }) => (
 
-  <motion.svg viewBox="0 0 150 150" style={{width:'150px'}} className={className}>
+  <svg viewBox="0 0 150 150" style={{width:'150px'}} className={className}>
      <g fill="none" stroke="#EE9838" strokeMiterlimit="10" strokeWidth="3">
         <path d="M16.6 43.5v39.6c0 25.9 21 46.9 46.9 46.9s46.9-21 46.9-46.9V71s-.6-4.7 4.6-4.7h2.4"></path>
         <path d="M47.8 43.8v39.4c0 8.9 7.1 16.1 15.9 16.1S79.6 92 79.6 83.1V66.8s-3.2-31.4 36.1-31.4h1.6M121.3 74.5h0c2.2 0 4-1.8 4-4V31.6c0-2.2-1.8-4-4-4h0c-2.2 0-4 1.8-4 4v38.8c0 2.3 1.8 4.1 4 4.1z"></path>
@@ -15,4 +14,4 @@ export const Debouchage = ({ className }) => (
       </g>
 
 
-  </motion.svg>)
+  </svg>)

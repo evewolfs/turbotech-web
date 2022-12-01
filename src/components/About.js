@@ -90,12 +90,18 @@ const AboutCard = styled.div`
 
 const AboutTitle = styled.div`
   color: var(--white);
-  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 3rem);
   line-height: normal;
   font-weight: 600;
   margin-top: 100px;
   text-align: center;
   margin-bottom: 140px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 
 `
 
@@ -122,8 +128,8 @@ const CardP = styled.div`
   padding-top: 2%;
   font-weight: 500;
   padding-bottom: 4%;
-  font-size: clamp(1.4rem, 3vw, 1.6rem);
-  line-height: clamp(1.8rem, 3vw, 2.2rem);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  line-height: clamp(1.6rem, 3vw, 2.2rem);
   text-align: left;
   text-justify: inter-character;
 

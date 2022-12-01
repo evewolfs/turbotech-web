@@ -1,10 +1,9 @@
 
 
 import React from "react"
-import { motion } from "framer-motion"
 
 export const Camion = ({ className }) => (
-  <motion.svg viewBox="0 0 323.5 98.5" className={className}>
+  <svg viewBox="0 0 323.5 98.5" className={className}>
 
 <g fill="none" strokeMiterlimit="10" style={{width:'80px'}}>
         <circle
@@ -51,6 +50,6 @@ export const Camion = ({ className }) => (
           strokeLinecap="round"
           d="M47.7 46.9L30.6 46.9"
         ></path>
-      </g>      </motion.svg>
+      </g>      </svg>
       )
       

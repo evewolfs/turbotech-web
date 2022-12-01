@@ -38,8 +38,7 @@ const Debouchage = props => (
   <Layout>
     <HeroImage title="débouchage" img={debouchage} />
     <PageHeader title="Un évier bouché ?"color="var(--white)" />
-    <PageHeader title="Une douche qui ne s’évacue plus ?" color="var(--white)"/>
-    <PageHeader title="Un sterput qui déborde ?" color="var(--white)"/>
+    <PageHeader title="Un douche qui déborde ?" color="var(--white)"/>
     <PageHeader title="On peut vous aider ?" color="var(--orange)"/>
  
     <PageP paragraph={debouchageData.paragraph} />

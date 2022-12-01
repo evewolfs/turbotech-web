@@ -19,6 +19,13 @@ const ParagraphRow = styled.div`
   width: clamp(26rem, 80vw, 60rem);
   margin: 1% 2% ;
   padding: 1% 2%;
+
+  @media (max-width: 768px) {
+width: 100%;
+padding: 1.5rem;
+margin: 1.5rem; 
+  }
+
 `
 
 const CardP = styled.div`
@@ -27,7 +34,7 @@ const CardP = styled.div`
   font-weight: 500;
   line-height: clamp(1.5rem, 3vw, 2rem);
   text-align: left;
-  text-align: left;
   margin-top: 4%;
   margin-bottom: 0;
+
 `

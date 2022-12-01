@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Video from "../assets/videos/turbotech-video2.mp4"
 import Logo from "../assets/images/turbotech-logo2209.svg"
+import {IoIosArrowDropdown} from 'react-icons/io'
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         <HeroItems>
           <img src={Logo} />
           <HeroH1>Chauffage et Sanitaire</HeroH1>
-          <DownArrow />
+          <DownArrow size={40}/>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -26,7 +27,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   height: 30vh;
   position: relative;
   margin-top: 200px;
@@ -44,7 +45,10 @@ const HeroContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 10vh;
+    padding: 1rem 1rem;
+  height: 20vh;
+  position: relative;
+  margin-top: 60px;
 
   }
 
@@ -82,7 +86,7 @@ const HeroItems = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+
   max-height: 100%;
   padding: 0;
   color: var(--white);
@@ -97,31 +101,25 @@ const HeroH1 = styled.h1`
   font-weight: 400;
   padding-top: 1rem;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    padding-top: 0.5rem;
+    margin: 0.5rem;
+  }
 `
 
-const DownArrow = styled.div`
+const DownArrow = styled(IoIosArrowDropdown)`
   position: absolute;
-  top: calc(50vh - 60px);
+  top: calc(40vh - 60px);
   left: calc(50% - 14px);
-  width: 0;
-  height: 30px;
-  border: 2px solid;
-  border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
-  color: #fe9d2b;
 
-  :after {
-    content: " ";
-    position: absolute;
-    top: 14px;
-    left: -8px;
-    width: 16px;
-    height: 16px;
-    border-bottom: 4px solid;
-    border-right: 4px solid;
-    border-radius: 4px;
-    transform: rotateZ(45deg);
+  color: var(--orange);
+justify-content: center;
+@media (max-width: 768px) {
+  display: none;
   }
+
+
 
   @keyframes jumpInfinite {
     0% {

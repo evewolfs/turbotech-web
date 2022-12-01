@@ -1,12 +1,11 @@
 import React from "react"
-import { motion } from "framer-motion"
 
 
 
 
 export const Installation = ({ className }) => (
 
-  <motion.svg viewBox="0 0 150 150" style={{width:'150px'}} className={className}>
+  <svg viewBox="0 0 150 150" style={{width:'150px'}} className={className}>
       <path
         fill="none"
         stroke="#EE9838"
@@ -30,4 +29,4 @@ export const Installation = ({ className }) => (
       ></path>
 
 
-  </motion.svg>)
+  </svg>)
