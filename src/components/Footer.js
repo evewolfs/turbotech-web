@@ -81,7 +81,7 @@ const StyledRow = styled.div`
 const DarkRow = styled.div`
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+ 
   padding-top: 3%;
   padding-bottom: 1%;
   background-color: var(--dark);
