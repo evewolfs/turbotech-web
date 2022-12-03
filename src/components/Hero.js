@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Video from "../assets/videos/turbotech-video2.mp4"
 import Logo from "../assets/images/turbotech-logo2209.svg"
 import {IoIosArrowDropdown} from 'react-icons/io'
 
