@@ -1,5 +1,9 @@
 p {
   color: var(--white);
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 8% 0;
+
 }
 .form {
     display: flex;
@@ -17,7 +21,7 @@ p {
   .form input, .form textarea, .form button {
     font-family: "Roboto Condensed";
     font-size: inherit;
-    border: 1px solid #1C1C1C;
+    border: 1px solid var(--dark);
     background: white;
     padding: 0.7rem 0.8rem;
     margin: 1rem;
@@ -27,7 +31,7 @@ p {
     resize: vertical;
   }
   .form button {
-    border: 1px solid var(--orange);
+    border: 2px solid var(--orange);
     background-color: transparent;
     padding: 0.5rem 0.75rem;
     margin-top: 0.5rem;

@@ -58,7 +58,7 @@ const Navbar = () => {
    
 
 
-<PhoneLink to='tel:0755324567'><FaPhoneAlt /><h4>0477 36 57 21</h4></PhoneLink>
+<PhoneLink href='tel:0032484915516'><FaPhoneAlt /><h4>+32 484 91 55 16</h4></PhoneLink>
      
 </NavbarContainer>
 

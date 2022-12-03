@@ -4,7 +4,6 @@ import { Expert } from "./icons/Expert"
 import { Clock } from "./icons/Clock"
 import { Location } from "./icons/Location"
 import { Camion } from "./icons/Camion"
-import { PageHeader } from "./pagecmp/PageHeader"
 
 const About = props => {
   return (

@@ -32,7 +32,7 @@ const Services = () => {
         <StyledCol>
           <ServiceLink to="/depannage">
             <ServiceItem>
-              <Depannage />
+              <Depannage  />
               <ServiceTitle>Dépannage</ServiceTitle>
             </ServiceItem>{" "}
           </ServiceLink>{" "}
@@ -92,14 +92,13 @@ display: flex;
 `
 const ServiceItem = styled.div`
   padding: 1.8rem;
-  margin: 1rem;
+  margin: 1.2rem;
   border-radius: 4px;
   border: 1px solid var(--white);
 
   &:hover {
     transform: translateY(-4px);
     color: var(--orange);
-    border: 1px solid var(--orange);
   
   }
 
@@ -119,9 +118,7 @@ const ServiceTitle = styled.div`
   margin-top: 6%;
   letter-spacing: 1px;
   text-decoration: none !important;
-  &:hover {
-    color: var(--orange);
-  }
+
 
 
 `

@@ -1,16 +1,16 @@
 import { Link } from "gatsby"
-import { FaHamburger, FaPhoneAlt } from "react-icons/fa"
+import { FaHamburger } from "react-icons/fa"
 import styled from "styled-components"
 
 export const Nav = styled.nav`
   background: var(--dark);
-  height: 80px;
+  height: 90px;
   display: flex;
   z-index: 999;
   top: 0;
   right: 0;
   margin: 0;
-  padding: 0 1%;
+  padding: 0 2%;
   position: sticky;
   justify-content: space-between;
   vertical-align: middle;
@@ -51,9 +51,7 @@ export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 960px) {
     display: flex;
-    /* position: absolute;
-    top: -16px;
-    right: 20px; */
+
     transform: translate(-50%, 54%);
     font-size: 1.8rem;
     margin: 0;
@@ -63,7 +61,7 @@ export const MobileIcon = styled.div`
     height: 100px;
     top: -26px;
     background: none;
-    margin: 0 10%;
+    margin: 0 4%;
   }
 `
 export const NavMenu = styled.ul`
@@ -135,15 +133,12 @@ export const NavLinks = styled(Link)`
 
 export const PhoneLink = styled(Link)`
   text-decoration: none;
-  padding: 8% 6%;
   color: var(--orange);
   position: absolute;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  height: 80px;
-  background-color: transparent !important;
-  margin-top: 1.7rem;
+  margin-top: 1.8rem;
   display: inline-flex;
   border: 2px solid var(--orange);
   border-radius: 50px;
@@ -153,21 +148,20 @@ export const PhoneLink = styled(Link)`
   vertical-align: middle;
   padding: 0 1%;
   align-items: center;
-  right: 0;
+right: -80px;
 
   &:hover {
     color: var(--white);
+    border: 2px solid var(--white);
   }
 
   @media screen and (max-width: 960px) {
     background: var(--dark);
-    padding: 4% 8%;
-    margin: 6% 10%;
-    font-size: 1.2rem;
-    &:hover {
-      color: var(--white);
-      transition: all 0.3s ease;
-    }
+    padding: 1% 6%;
+    margin: 4% 10%;
+    font-size: 1rem;
+    right: 0;
+
   }
 
   h4 {
@@ -176,6 +170,7 @@ export const PhoneLink = styled(Link)`
     font-weight: 600;
     display: inline-flex;
     padding: 2%;
+    margin-left: 4px;
     /* margin: -8% 1%; */
     text-align: center;
     justify-content: center;

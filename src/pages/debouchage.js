@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -23,13 +22,13 @@ const debouchageData = {
     "égouts et réseau d'égouttage",
     "baignoire et douche",
     "évier et lavabo",
-    "colonne Eau Fécale",
-    "colonne Eau Usée",
-    "colonne Eau Pluviale",
+    "colonne eau fécale",
+    "colonne eau usée",
+    "colonne eau pluviale",
     "Dégorgement de canalisations",
     "Problèmes de siphon",
     "Problèmes évacuation d’eaux",
-    "Entretien des canalisations et égouts",
+    "Entretien canalisations et égouts",
   ],
   pagetitle: "de débouchage",
 }
@@ -75,13 +74,7 @@ export const Head = () => <Seo title="Page debouchage" />
 
 export default Debouchage
 
-const IconBox = styled.div`
-  padding: 1%;
-  display: flex;
-  flex-direction: row;
 
-  
-`
 const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;

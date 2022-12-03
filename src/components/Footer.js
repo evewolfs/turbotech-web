@@ -20,7 +20,7 @@ const Footer = () => {
             Besoin d’un devis <br />
             ou d’un rendez-vous?
           </FooterText>
-          <FooterButton to='tel:0755324567'>Appelez-nous</FooterButton>
+          <FooterButton href='tel:0032484915516'>Appelez-nous</FooterButton>
         </StyledCol>
       </StyledRow>
       <DarkRow>
@@ -30,7 +30,7 @@ const Footer = () => {
               {" "}
               <a href="https://www.facebook.com/moustafa.chaou">
                 <RiFacebookCircleLine
-                  size={46}
+                  size={42}
                   style={{ textDecoration: "none" }}
                 />
               </a>
@@ -38,7 +38,7 @@ const Footer = () => {
             <IconBox>
               {" "}
               <a href="mailto:turbotech.brussels@gmail.com" style={{ textDecoration: "none" }}>
-                <FiMail size={42} />
+                <FiMail size={40} />
               </a>
             </IconBox>
             <IconBox>
@@ -61,7 +61,7 @@ const StyledContainer = styled.div`
   background-color: none;
   width: 100%;
   max-width: 100%; 
-  margin: 0;
+  margin: 0 auto;
   padding: 0 auto;
 `
 
@@ -81,7 +81,7 @@ const StyledRow = styled.div`
 const DarkRow = styled.div`
   display: flex;
   margin: 0 auto;
- 
+  justify-content: center;
   padding-top: 3%;
   padding-bottom: 1%;
   background-color: var(--dark);
@@ -116,7 +116,7 @@ display: flex;
   background-color: var(--orange);
   color: var(--dark);
   text-transform: uppercase;
-  border: 2px solid var(--dark);
+  border: 3px solid var(--dark);
   border-radius: 50px;
   :hover {
     color: var(--white);
@@ -151,7 +151,7 @@ const IconBox = styled.div`
 
   a{
     :hover {
-      color: var(--orange);
+      color: var(--orange) !important;
     text-decoration: none;
     }
 

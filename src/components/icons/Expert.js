@@ -2,31 +2,23 @@ import React from "react"
 
 export const Expert = ({ className }) => (
   <svg  viewBox="0 0 180 180" style={{width:'100px'}}  className={className}>
-   {/* <circle
-        cx="90"
-        cy="90"
-        r="81"
-        fill="none"
+    <path
+        fill="var(--dark)"
         stroke="#FF9600"
         strokeLinecap="round"
+        strokeLinejoin="round"
         strokeMiterlimit="10"
-        strokeWidth="5"
-      ></circle> */}
-      <path
-        fill="none"
-        stroke="#FF9600"
-        strokeLinecap="round"
-        strokeMiterlimit="10"
-        strokeWidth="5"
-        d="M90 22.7L101.4 32.8 115.8 27.8 122.4 41.5 137.6 42.4 138.5 57.6 152.2 64.2 147.2 78.6 157.3 90 147.2 101.4 152.2 115.8 138.5 122.4 137.6 137.6 122.4 138.5 115.8 152.2 101.4 147.2 90 157.3 78.6 147.2 64.2 152.2 57.6 138.5 42.4 137.6 41.5 122.4 27.8 115.8 32.8 101.4 22.7 90 32.8 78.6 27.8 64.2 41.5 57.6 42.4 42.4 57.6 41.5 64.2 27.8 78.6 32.8z"
+        strokeWidth="6"
+        d="M89.9 5.2L104.2 18 122.4 11.7 130.8 29 149.9 30.1 151.1 49.2 168.3 57.6 162 75.8 174.8 90.1 162 104.5 168.3 122.6 151.1 131 149.9 150.1 130.8 151.3 122.4 168.5 104.2 162.3 89.9 175 75.5 162.3 57.4 168.5 49 151.3 29.9 150.1 28.7 131 11.5 122.6 17.7 104.5 5 90.1 17.7 75.8 11.5 57.6 28.7 49.2 29.9 30.1 49 29 57.4 11.7 75.5 18z"
       ></path>
       <path
-        fill="none"
+        fill="var(--dark)"
         stroke="#FF9600"
         strokeLinecap="round"
+        strokeLinejoin="round"
         strokeMiterlimit="10"
-        strokeWidth="5"
-        d="M90 53.9L101.7 77.7 127.9 81.5 109 100 113.5 126.1 90 113.8 66.5 126.1 71 100 52.1 81.5 78.3 77.7z"
+        strokeWidth="6"
+        d="M89.9 55.1L101.3 78.2 126.7 81.9 108.3 99.8 112.6 125.1 89.9 113.2 67.1 125.1 71.5 99.8 53.1 81.9 78.5 78.2z"
       ></path>
       </svg>
 )

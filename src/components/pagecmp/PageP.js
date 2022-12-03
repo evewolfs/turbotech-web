@@ -21,9 +21,10 @@ const ParagraphRow = styled.div`
   padding: 1% 2%;
 
   @media (max-width: 768px) {
-width: 100%;
-padding: 1.5rem;
-margin: 1.5rem; 
+width: 90%;
+padding: 2% 4%;
+margin:  2%; 
+flex-wrap: wrap;
   }
 
 `

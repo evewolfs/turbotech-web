@@ -21,6 +21,7 @@ const ListItem = styled.li`
   color: var(--white);
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.6rem;
 
 `
 
@@ -44,6 +45,10 @@ const ParagraphRow = styled.div`
   width: 100%;
   margin: 1% 2% ;
   padding: 1% 2%;
-  /* margin: 3rem clamp(2rem, 2vw, 4rem);
-  padding: 3rem clamp(1rem, 1vw, 2rem); */
+  @media (max-width: 768px) {
+width: 90%;
+padding: 2% 4%;
+margin:  2%; 
+flex-wrap: wrap;
+  }
 `

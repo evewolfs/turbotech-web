@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -75,13 +74,7 @@ export const Head = () => <Seo title="Page entretien" />
 
 export default Entretien
 
-const IconBox = styled.div`
-  padding: 1%;
-  display: flex;
-  flex-direction: row;
 
-  
-`
 const IconsRow = styled.div`
   display: flex;
   margin: 0 auto;

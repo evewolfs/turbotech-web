@@ -7,9 +7,6 @@ import {IoIosArrowDropdown} from 'react-icons/io'
 const Hero = () => {
   return (
     <HeroContainer>
-      <HeroBg>
-        {/* <video src={Video} type="video/mp4" autoPlay muted playsInLine /> */}
-      </HeroBg>
       <HeroContent>
         <HeroItems>
           <img src={Logo} />
@@ -53,25 +50,8 @@ const HeroContainer = styled.div`
   }
 
 `
-const HeroBg = styled.div`
-  position: absolute;
-  top: O;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`
 
-const VideoBg = styled.div`
-  background: var(--dark);
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: -3;
-`
+
 
 const HeroContent = styled.div`
   z-index: 3;
@@ -102,8 +82,8 @@ const HeroH1 = styled.h1`
   padding-top: 1rem;
   text-transform: uppercase;
   @media (max-width: 768px) {
-    padding-top: 0.5rem;
-    margin: 0.5rem;
+    padding-top: 0.2rem;
+    margin: 0.2rem;
   }
 `
 
