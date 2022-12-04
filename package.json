@@ -36,7 +36,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "deploy": "npm run build && echo 'sigr.online' > ./CNAME && gh-pages -d build",
+    "deploy": "npm run build && echo 'turbotech.solutions' > ./CNAME && gh-pages -d build",
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
