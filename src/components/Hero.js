@@ -79,6 +79,8 @@ const HeroH1 = styled.h1`
   font-weight: 600;
   padding-top: 1rem;
   text-transform: uppercase;
+
+
   @media (max-width: 768px) {
     padding-top: 0.1rem;
     margin: -2rem 0;
