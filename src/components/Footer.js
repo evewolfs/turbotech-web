@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { RiFacebookCircleLine } from "react-icons/ri"
 import { FiMail } from "react-icons/fi"
+import {FaPhoneAlt} from "react-icons/fa"
 
 const Footer = () => {
 
@@ -20,7 +22,7 @@ const Footer = () => {
             Besoin d’un devis <br />
             ou d’un rendez-vous?
           </FooterText>
-          <FooterButton href='tel:0032484915516'>Appelez-nous</FooterButton>
+          <FooterButton href='tel:0032484915516'><FaPhoneAlt style={{backgroundColor:"transparent"}}/><h4>+32 484 91 55 16</h4></FooterButton>
         </StyledCol>
       </StyledRow>
       <DarkRow>
@@ -105,24 +107,46 @@ display: flex;
   background-color: var(--orange);
 `
 
-const FooterButton = styled.button`
+
+
+export const FooterButton = styled(Link)`
 display: flex;
   margin: 4% 2%;
-  padding: 0.5rem 0.75rem;
   text-align: center;
-  font-weight: 600;
-  font-size: 1.2rem;
-  min-width: 100px;
   background-color: var(--orange);
   color: var(--dark);
-  text-transform: uppercase;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--dark);
+
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
   border: 3px solid var(--dark);
   border-radius: 50px;
+  white-space: nowrap;
+  height: 40px;
+  vertical-align: middle;
+  padding: 0 8%;
+  align-items: center;
   :hover {
     color: var(--white);
     border: 2px solid var(--white);
     transform: translateY(-2px);
   }
+
+  h4 {
+    font-size: 1.1rem;
+    background: none;
+    font-weight: 600;
+    display: inline-flex;
+    padding: 2%;
+    margin-left: 4px;
+    text-align: center;
+    justify-content: center;
+  }
+
+
 `
 
 const LinkBanner = styled.div`

@@ -14,8 +14,8 @@ const About = props => {
       </CamionAnim>
       <CardP>
         Actif depuis 2005, nous nous déplaçons partout dans Bruxelles pour vous
-        venir en aide. Nous vous garantissons untravail impeccable, des
-        matériaux de qualité, et tout cela à un prix abordable.Le patron réalise
+        venir en aide. Nous vous garantissons un travail impeccable, des
+        matériaux de qualité, et tout cela à un prix abordable. Le patron réalise
         lui-même les travaux, avec l’aide d’ouvriers qualifiés si nécessaire.
         N’hésitez pas à nous appeler ou nous demander un devis, nous nous ferons
         un plaisir de vous répondre !
