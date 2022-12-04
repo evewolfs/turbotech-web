@@ -36,7 +36,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "deploy": "gatsby run build && echo 'sigr.online' > ./build/CNAME && gh-pages -d build",
+    "deploy": "yarn run build && echo 'sigr.online' > ./build/CNAME && gh-pages -d build",
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
