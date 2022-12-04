@@ -35,7 +35,7 @@ const Entretien = props => (
     <HeroImage title="entretien" img={entretien} />
     <PageHeader title="Des radiateurs bruyants ?" color="white" />
     <PageHeader title="Une chaudière fainéante ?" color="white" />
-    <PageHeader title="Jamais trop tôt pour nous appeler !" color="orange" />    <PageP paragraph={entretienData.paragraph} />
+    <PageHeader title="Jamais trop tôt pour un coup de fil !" color="orange" />    <PageP paragraph={entretienData.paragraph} />
     <IconsRow>
   
     

@@ -8,7 +8,7 @@ const Hero = () => {
     <HeroContainer>
       <HeroContent>
         <HeroItems>
-          <img src={Logo} />
+          <img src={Logo} style={{margin:'0'}}/>
           <HeroH1>Chauffage et Sanitaire</HeroH1>
           <DownArrow size={40}/>
         </HeroItems>
@@ -33,7 +33,7 @@ const HeroContainer = styled.div`
   :before {
     content: "";
     position: absolute;
-    top: O;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -41,7 +41,7 @@ const HeroContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
   position: relative;
   margin-top: 100px;
 
@@ -76,12 +76,12 @@ const HeroH1 = styled.h1`
   font-size: clamp(1.6rem, 6vw, 4rem);
   margin: 1rem;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 1rem;
   text-transform: uppercase;
   @media (max-width: 768px) {
-    padding-top: 0.2rem;
-    margin: 0.2rem;
+    padding-top: 0.1rem;
+    margin: 0.1rem 0;
   }
 `
 
