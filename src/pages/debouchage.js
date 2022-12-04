@@ -81,9 +81,9 @@ const IconsRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 2%;
+  padding-top: 4%;
   @media (max-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
     width:100%;
   }
 `

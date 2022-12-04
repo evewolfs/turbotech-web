@@ -99,7 +99,10 @@ const AboutTitle = styled.div`
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   @media (max-width: 768px) {
-    margin-top: 20px;
+    margin: 10% 0;
+    padding: 0 10%;
+
+   
   }
 
 `

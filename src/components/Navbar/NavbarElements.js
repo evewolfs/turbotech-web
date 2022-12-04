@@ -157,8 +157,8 @@ right: -80px;
 
   @media screen and (max-width: 960px) {
     background: var(--dark);
-    padding: 1% 6%;
-    margin: 4% 10%;
+    padding: 0 6%;
+    margin: 5% 10%;
     font-size: 1rem;
     right: 0;
 
