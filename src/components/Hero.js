@@ -76,12 +76,12 @@ const HeroH1 = styled.h1`
   font-size: clamp(1.6rem, 6vw, 4rem);
   margin: 1rem;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 1rem;
   text-transform: uppercase;
   @media (max-width: 768px) {
     padding-top: 0.1rem;
-    margin: 0.1rem 0;
+    margin: -2rem 0;
   }
 `
 
